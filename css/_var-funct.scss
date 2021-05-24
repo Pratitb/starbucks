@@ -1,0 +1,7 @@
+@mixin flex($jc-value, $al-val, $direction) {
+    display: flex;
+    justify-content: $jc-value;
+    align-items: $al-val;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}

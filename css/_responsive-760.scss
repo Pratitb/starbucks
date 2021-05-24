@@ -1,0 +1,364 @@
+@media (min-width: 760px) and (max-width: 860px) {
+    .navigation {
+      ul {
+        height: 80vh;
+        margin-top: 5rem;
+        a {
+          font-size: 4.5rem;
+          &::before {
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+    .pandemic {
+      padding: 0.6rem;
+      min-height: 5vh;
+      
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .header {
+      padding: 0 1rem;
+      header {
+        padding: 0.5rem;
+        .logo {
+          display: flex;
+        }
+        ul {
+          .toggle {
+            width: 50px;
+            height: 50px;
+            
+            right: 3rem;
+            top: 3rem;
+            background-size: 40px;
+          }
+        }
+      }
+    }
+    /* HOME PAGE START */
+    .hero {
+      flex-direction: column;
+      padding: 1.5rem;
+      .circle {
+        clip-path: circle(13rem at 50% 15%);
+      }
+      .content {
+        order: 0;
+        margin-top: 6rem;
+        max-width: 600px;
+        .punch-line {
+          font-size: 2.7rem;
+        }
+        .informative {
+          font-size: 1.5rem;
+          line-height: 1.9rem;
+        }
+      }
+      .image-box {
+        margin-bottom: 5rem;
+        order: -1;
+        img {
+          max-width: 300px;
+        }
+      }
+      .menu {
+        a {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
+      }
+      .thumbnail {
+        bottom: 38%;
+        width: 70vw;
+        left: 50%;
+        li {
+          img {
+            max-width: 60%;
+          }
+        }
+      }
+    }
+    /* HOME PAGE END */
+    /* NEW PAGE START */
+  
+    .whats-new-header,
+    .about-header {
+      min-height: 30vh;
+      background-position: 50% 20%;
+      .hero-heading {
+        font-size: 4rem;
+      }
+    }
+    .whats-new-main {
+      .main-heading {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        h2 {
+          font-size: 3rem;
+          max-width: 400px;
+          margin: 3rem 0 0 0;
+          text-align: center;
+        }
+      }
+      .main-content {
+        padding: 2rem;
+        .main-card {
+          flex-direction: column;
+          min-height: 70vh;
+          .main-card-content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h3 {
+              font-size: 2.3rem;
+              margin-bottom: 1rem;
+              text-align: center;
+            }
+            p {
+              font-size: 1.5rem;
+              line-height: 2rem;
+              text-align: justify;
+            }
+          }
+          img {
+            max-width: 70%;
+            border-radius: 1rem;
+  
+            order: -1;
+          }
+        }
+      }
+    }
+    /* NEW PAGE END */
+    /* MENU PAGE START */
+    .mobile-menu {
+      position: fixed;
+      display: flex;
+      justify-content: space-evenly;
+      width: 70%;
+      padding: 0.7rem 0.5rem;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgb(0, 112, 74);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      border-radius: 1rem;
+      z-index: 1;
+      transition: 0.3s;
+      
+      .menu-items{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          min-height: 10vh;
+          word-wrap: break-word;
+          max-width: 12%;
+          i{
+              font-size: 2rem;
+              color: gold;
+          }
+          .menu-names{
+              color: #fff;
+              font-size: 1.5rem;
+          }
+      }
+    }
+    .menu-main {
+      .menu-main-heading {
+        h2 {
+          font-size: 3rem;
+          margin: 5rem 0 1rem 0;
+        }
+      }
+    }
+    .menu-main-content {
+      flex-direction: column;
+      padding: 2rem;
+      .side-nav {
+          display: none;
+        width: 100%;
+        .sidebar-btn {
+          font-size: 1rem;
+          max-width: 100%;
+        }
+      }
+      .products-container {
+        width: 100%;
+        
+        .product-card {
+            margin-bottom: 5rem;
+            flex-basis: 40%;
+            h3{
+                font-size: 1.8rem;
+                text-align: center;
+                margin: 1.5rem 0;
+            }
+            h4{
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                text-align: justify;
+            }
+            h5{
+                font-size: 1.4rem;
+            }
+          img {
+            max-width: 270px;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    /* MENU PAGE END */
+    /* ABOUT PAGE START */
+    .about {
+      .mission,
+      .company,
+      .coffee {
+        flex-direction: column;
+        margin-bottom: 10rem;
+        min-height: 75vh;
+        img {
+          max-width: 75%;
+          border-radius: 1rem;
+          order: -1;
+        }
+        .accordions {
+          max-width: 75%;
+          min-height: 18vh;
+          .accordion {
+            .content-box {
+              .accordion-label {
+                font-size: 2rem;
+                padding: 1rem;
+                &::before {
+                  font-size: 2rem;
+                }
+              }
+              .accordion-content {
+                font-size: 1.5rem;
+                
+              }
+            }
+          }
+        }
+      }
+    }
+    /* ABOUT PAGE END */
+    .contact-header {
+      background-position: 30% 27%;
+    }
+    .contact {
+      padding: 5rem 4rem;
+      .feedback-text-box {
+        align-items: flex-start;
+        .feedback {
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
+      }
+      .contact-main-content {
+        min-height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+        .contact-information-card {
+          min-height: 60vh;
+          padding: 3rem;
+          flex-wrap: wrap;
+          max-width: 600px;
+          margin-bottom: 3rem;
+          
+          
+          .circle {
+            clip-path: circle(14rem at 94% 92%);
+          }
+          .circle-one {
+            clip-path: circle(13rem at 100% 97%);
+          }
+          .circle-two {
+            clip-path: circle(9rem at 97% 97%);
+          }
+          .information-heading {
+            .information-heading-one {
+              font-size: 3rem;
+            }
+            .information-heading-two {
+              font-size: 1.5rem;
+              line-height: 2rem;
+            }
+          }
+          .contact-details {
+              min-height: 22vh;
+            .details-box {
+              i {
+                font-size: 2rem;
+              }
+            }
+            .contact-link {
+              font-size: 1.7rem;
+              margin-left: 0.5rem;
+              padding: 0.5rem;
+              
+            }
+          }
+          .social-icons {
+            left: 1rem;
+            width: 44vw;
+            .social-icon {
+              padding: 1rem;
+              i {
+                font-size: 2.2rem;
+              }
+            }
+          }
+        }
+  
+        .form {
+          width: 600px;
+          padding: 4rem;
+          min-height: 65vh;
+          .input-group {
+            height: 3rem;
+            &:hover label{
+                bottom: 3rem;
+            }
+            input{
+                font-size: 2rem;
+            }
+            label {
+              font-size: 1.5rem;
+              
+            }
+            textarea {
+              padding: 0.8rem;
+              font-size: 1.5rem;
+            }
+          }
+          .textarea-group{
+              height: 7rem;
+          }
+          button[type="submit"] {
+            padding: 1rem 0.2rem;
+            font-size: 1.7rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .navigation-buttons {
+      .backward,
+      .forward {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+        .arrows {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+  

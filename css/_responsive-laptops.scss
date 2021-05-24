@@ -1,0 +1,108 @@
+@media (min-width:960px) and (max-width:1200px){
+    .navigation{
+        ul{
+            a{
+                &::before{
+                    font-size: 10rem;
+                }
+            }
+        }
+    }
+    .pandemic{
+        padding: 0.7rem;
+        p{
+            font-size: 1rem;
+        }
+    }
+    .header{
+        padding: 0.5rem 2rem;
+        a{
+            img{
+                max-width: 40%;
+            }
+        }
+        .toggle, .toggle.active{
+            background-size: 25px;
+            width: 40px;
+            height: 40px;
+        }
+        header{
+            padding: 0;
+        }
+    }
+    .hero{
+        padding: 3rem;
+        .circle{
+            clip-path: circle(30rem at bottom right);
+        }
+        .image-box{
+            img{
+                max-width: 80%;
+            }
+            
+        }
+        .content{
+            .punch-line{
+                font-size: 3rem;
+            }
+            .informative{
+                p{
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                }
+            }
+            .menu{
+                a{
+                    font-size: 1rem;
+                    padding: 0.8rem;
+                }
+            }
+            
+        }
+        .thumbnail{
+            width: 25vw;
+            li{
+                img{
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+    .whats-new-header{
+        min-height: 45vh;
+        background-position: 0 20%;
+    }
+    .whats-new-main{
+        .main-heading{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .main-content{
+            .main-card{
+                img{
+                    max-width: 40%;
+                }
+            }
+        }
+        .navigation-buttons{
+            .backward, .forward{
+                font-size: 2rem;
+                padding: 1rem;
+                .arrows{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .menu-main{
+        .menu-main-heading{
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+}
