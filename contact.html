@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section class="navigation">
+      <span style="--i: 0"></span>
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+
+      <ul>
+        <li><a href="index.html" data-text="Home">Home</a></li>
+        <li><a href="new.html" data-text="New">New</a></li>
+        <li><a href="menu.html" data-text="Menu">Menu</a></li>
+        <li><a href="about.html" data-text="About">About</a></li>
+        <!-- <li><a href="Outlets.html" data-text="Outlets">Outlets</a></li> -->
+        <li><a href="contact.html" data-text="Contact">Contact</a></li>
+      </ul>
+    </section>
+    <div class="pandemic">
+      <p class="not-typing">Wear a mask.</p>
+      <p class="typing">Help slow the spread of COVID-19.</p>
+    </div>
+    <section class="header">
+      <header>
+        <a href="index.html" class="logo"
+          ><img src="images/starbucks-logo-01.png" alt=""
+        /></a>
+        <ul>
+          <div class="toggle"></div>
+        </ul>
+      </header>
+    </section>
+    <section class="contact-hero">
+      <div class="contact-header">
+        <h1 class="contact-heading">Contact</h1>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="feedback-text-box">
+        <p class="feedback">Did you like the website?</p>
+        <p class="feedback">
+          Is it appealing enough to have an impact on the visitor?
+        </p>
+        <p class="feedback punch-line">
+          If yes, then give me an opportunity to serve you one and increase your
+          customers.
+        </p>
+      </div>
+
+      <div class="contact-main-content">
+        <div class="contact-information-card">
+          <div class="circle"></div>
+          <div class="circle-one"></div>
+          <div class="circle-two"></div>
+          <div class="information-heading">
+            <p class="information-heading-one">Contact Information</p>
+            <p class="information-heading-two">
+              Fill up the form and our team will get back to you within the next
+              24 - 48 hours.
+            </p>
+          </div>
+          <div class="contact-details">
+            <div class="details-box">
+              <i class="fas fa-phone-alt fa-2x contact-icon"></i>
+              <a class="contact-link" href="tel:+91-9870175159"
+                >+91-9870175159</a
+              >
+            </div>
+            <div class="details-box">
+              <i class="fas fa-comment-alt fa-2x contact-icon"></i>
+              <a class="contact-link" href="mailto:pratit.bangdiwala7@gmail.com"
+                >pratit.bangdiwala7@gmail.com</a
+              >
+            </div>
+            <div class="details-box">
+              <i class="fas fa-globe-asia fa-2x contact-icon"></i>
+              <a class="contact-link location" href="javascript:;"
+                >Mumbai, India</a
+              >
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="javascript:;" class="social-icon"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a href="javascript:;" class="social-icon"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a href="javascript:;" class="social-icon"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <!-- <div class="illustration">
+          <img src="images/contact-coffee.svg" alt="" />
+        </div> -->
+        <form action="https://formspree.io/f/xzbydakz" method="POST">
+          <div class="form">
+            <div class="input-group">
+              <input
+                type="text"
+                name="Full Name"
+                id="name"
+                autocomplete="off"
+                required
+              />
+              <div class="underline"></div>
+              <label for="name">Full Name</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                autocomplete="off"
+                required
+              />
+              <div class="underline"></div>
+              <label for="email">Email Address</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="phone"
+                name="Contact Number"
+                id="number"
+                autocomplete="off"
+                required
+              />
+              <div class="underline"></div>
+              <label for="number">Contact Number</label>
+            </div>
+            <div class="input-group textarea textarea-group">
+              <textarea
+                name="Message"
+                id="message"
+                cols="50"
+                rows="5"
+                placeholder="Type your message..."
+              ></textarea>
+              <div class="underline"></div>
+            </div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="navigation-buttons">
+      <a href="menu.html" class="backward"
+        ><span class="arrows left-arrow">&larr;</span> Menu</a
+      >
+      <a href="new.html" class="forward"
+        >New <span class="arrows right-arrow">&rarr;</span></a
+      >
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
