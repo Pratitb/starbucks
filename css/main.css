@@ -1384,7 +1384,7 @@ header ul .toggle.active {
     padding: 2rem;
   }
   .menu-main-content .side-nav {
-    display: none;
+    display: none !important;
     width: 100%;
   }
   .menu-main-content .side-nav .sidebar-btn {
@@ -2163,7 +2163,7 @@ header ul .toggle.active {
     padding: 2rem;
   }
   .menu-main-content .side-nav {
-    display: none;
+    display: none !important;
     width: 100%;
   }
   .menu-main-content .side-nav .sidebar-btn {
@@ -2558,7 +2558,7 @@ header ul .toggle.active {
     padding: 2rem;
   }
   .menu-main-content .side-nav {
-    display: none;
+    display: none !important;
     width: 100%;
   }
   .menu-main-content .side-nav .sidebar-btn {
@@ -2966,7 +2966,7 @@ header ul .toggle.active {
     padding: 2rem;
   }
   .menu-main-content .side-nav {
-    display: none;
+    display: none !important;
     width: 100%;
   }
   .menu-main-content .side-nav .sidebar-btn {
