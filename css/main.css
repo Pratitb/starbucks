@@ -1978,6 +1978,7 @@ header ul .toggle.active {
   }
   .header header .logo img {
     max-height: 3rem;
+    max-width: 100%;
   }
   .header header ul .toggle {
     width: 40px;
