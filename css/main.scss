@@ -283,7 +283,7 @@ header {
   }
 }
 .mobile-menu{
-  display: none
+  display: none!important;
 }
 
 @import "var-funct";

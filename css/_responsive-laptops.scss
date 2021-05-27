@@ -96,12 +96,270 @@
         }
     }
     .mobile-menu{
-        display: none;
+        display: none!important;
     }
     .menu-main{
         .menu-main-heading{
             h2{
                 font-size: 3rem;
+            }
+        }
+    }
+    .menu-main-content{
+        justify-content: flex-end;
+        .side-nav{
+            position: fixed;
+            display: none;
+            left: 3rem;
+            top: 7rem
+        }
+        .products-container{
+            max-width: 70vw;
+            .product-card{
+                flex-basis: 45%;
+                h3{
+                    font-size: 1.2rem;
+                }
+                h4{
+                    text-align: justify;
+                    font-size: 0.9rem;
+                    line-height: 1.5rem;
+                }
+                h5{
+                    font-size: 0.9rem;
+                }
+                img{
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+    .about{
+        img{
+            max-width: 50%;
+        }
+        .mission, .coffee, .company{
+            .accordions{
+                .accordion-content{
+                    font-size: 1.1rem;
+                    
+                }
+                .accordion-label{
+                    font-size: 1.2rem;
+                    padding: 0.8rem;
+                    &::before{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        .contact-main-content{
+            .contact-information-card{
+                min-height: 620px;
+                max-width: 460px;
+            }
+        }
+        .feedback-text-box{
+            .feedback{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .navigation-buttons{
+        .forward, .backward{
+            padding: 1rem;
+            font-size: 2rem;
+            .arrows{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1250px) and (max-width:1500px){
+    .navigation{
+        ul{
+            a{
+                &::before{
+                    font-size: 15rem;
+                }
+            }
+        }
+    }
+    .pandemic{
+        padding: 0.7rem;
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    .header{
+        padding: 0.5rem 2rem;
+        a{
+            img{
+                max-width: 40%;
+            }
+        }
+        .toggle, .toggle.active{
+            background-size: 25px;
+            width: 40px;
+            height: 40px;
+        }
+        header{
+            padding: 0;
+        }
+    }
+    .hero{
+        padding: 3rem;
+        .circle{
+            clip-path: circle(30rem at bottom right);
+        }
+        .image-box{
+            img{
+                max-width: 90%;
+            }
+            
+        }
+        .content{
+            .punch-line{
+                font-size: 4rem;
+            }
+            .informative{
+                p{
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+            .menu{
+                a{
+                    font-size: 1.4rem;
+                    padding: 0.8rem;
+                }
+            }
+            
+        }
+        .thumbnail{
+            width: 25vw;
+            li{
+                img{
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+    .whats-new-header{
+        min-height: 45vh;
+        background-position: 0 20%;
+    }
+    .whats-new-main{
+        .main-heading{
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+        .main-content{
+            padding: 2rem 1rem;
+            .main-card{
+                img{
+                    max-width: 40%;
+                }
+            }
+        }
+        
+    }
+    .mobile-menu{
+        display: none!important;
+    }
+    .menu-main{
+        .menu-main-heading{
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+    .menu-main-content{
+        justify-content: flex-end;
+        .side-nav{
+            position: fixed;
+            display: none;
+            left: 3rem;
+            top: 7rem
+        }
+        .products-container{
+            max-width: 70vw;
+            .product-card{
+                flex-basis: 50%;
+                h3{
+                    font-size: 1.5rem;
+                }
+                h4{
+                    text-align: justify;
+                    font-size: 1.1rem;
+                    line-height: 1.8rem;
+                }
+                h5{
+                    font-size: 1.1rem;
+                }
+                img{
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+    .about{
+        img{
+            max-width: 50%;
+        }
+        .mission, .coffee, .company{
+            .accordions{
+                .content-box.active .accordion-content{
+                    line-height: 2rem;
+                }
+                .accordion-content{
+                    font-size: 1.2rem;
+                    
+                    
+                }
+                .accordion-label{
+                    font-size: 1.4rem;
+                    padding: 1rem;
+                    &::before{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        .contact-main-content{
+            .contact-information-card{
+                min-height: 620px;
+                max-width: 500px;
+                .social-icons{
+                    width: 20vw;
+                }
+            }
+            .form{
+                button[type='submit']{
+                    padding: 0.8rem;
+                }
+            }
+        }
+        .feedback-text-box{
+            .feedback{
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .navigation-buttons{
+        .forward, .backward{
+            padding: 1rem;
+            font-size: 2rem;
+            .arrows{
+                font-size: 2rem;
             }
         }
     }
