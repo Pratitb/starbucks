@@ -213,45 +213,26 @@ ul {
           transition-delay: 0.5s;
 }
 
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 1rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 4rem;
 }
 
-header .logo img {
+.header .logo img {
   position: relative;
   z-index: 2;
   max-width: 50%;
 }
 
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50vw;
-}
-
-header ul li a {
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: 500;
-}
-
-header ul .toggle {
+.header .toggle {
   position: fixed;
   right: 6rem;
   top: 2rem;
@@ -265,7 +246,7 @@ header ul .toggle {
   height: 50px;
 }
 
-header ul .toggle.active {
+.header .toggle.active {
   background: white url(../images/close.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -443,12 +424,6 @@ header ul .toggle.active {
   transition: 0.2s;
 }
 
-.hero .menu a:hover {
-  border: 1px solid #00704a;
-  background: none;
-  color: #00704a;
-}
-
 .hero .image-box .popular-drinks {
   max-width: 70%;
 }
@@ -472,6 +447,7 @@ header ul .toggle.active {
   max-width: 75%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .hero .thumbnail li img:hover {
@@ -479,7 +455,7 @@ header ul .toggle.active {
           transform: translateY(-25%);
 }
 
-.whats-new-header, .menu-header, .about-header, .contact-header {
+.new-header, .menu-header, .about-header, .contact-header {
   min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -496,17 +472,17 @@ header ul .toggle.active {
           justify-content: center;
 }
 
-.whats-new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading {
+.new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading {
   color: white;
   text-transform: uppercase;
   font-size: 4rem;
 }
 
-.whats-new-main {
+.new-main {
   min-height: 100vh;
 }
 
-.whats-new-main .main-heading {
+.new-main .new-main-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,18 +494,18 @@ header ul .toggle.active {
           align-items: center;
 }
 
-.whats-new-main .main-heading h2 {
+.new-main .new-main-heading h2 {
   font-size: 4rem;
   color: #00704a;
   text-shadow: 7px 5px 0px rgba(0, 0, 0, 0.3);
   margin: 8rem 0;
 }
 
-.whats-new-main .main-content {
+.new-main .new-main-content {
   padding: 5rem 1rem;
 }
 
-.whats-new-main .main-content .main-card {
+.new-main .new-main-content .new-main-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,26 +519,26 @@ header ul .toggle.active {
   min-height: 80vh;
 }
 
-.whats-new-main .main-content .main-card:hover {
+.new-main .new-main-content .new-main-card:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-.whats-new-main .main-content .main-card img {
+.new-main .new-main-content .new-main-card img {
   border-radius: 1.5rem;
 }
 
-.whats-new-main .main-content .main-card .main-card-content {
+.new-main .new-main-content .new-main-card .new-main-card-content {
   max-width: 500px;
 }
 
-.whats-new-main .main-content .main-card h3 {
+.new-main .new-main-content .new-main-card h3 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-.whats-new-main .main-content .main-card p {
+.new-main .new-main-content .new-main-card p {
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.6);
   line-height: 2rem;
@@ -690,7 +666,7 @@ header ul .toggle.active {
   color: black;
 }
 
-.menu-main-content .products-container .product-card h4 {
+.menu-main-content .products-container .product-card p {
   font-size: 1.2rem;
   max-width: 300px;
   margin-bottom: 0.5rem;
@@ -699,7 +675,7 @@ header ul .toggle.active {
   text-align: justify;
 }
 
-.menu-main-content .products-container .product-card h5 {
+.menu-main-content .products-container .product-card .price {
   color: #00704a;
   font-size: 1.2rem;
 }
@@ -1256,12 +1232,12 @@ header ul .toggle.active {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header, .menu-header, .about-header, .contact-header,
+  .whats-new-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
+  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -1644,12 +1620,12 @@ header ul .toggle.active {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header, .menu-header, .about-header, .contact-header,
+  .whats-new-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
+  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -2036,12 +2012,12 @@ header ul .toggle.active {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header, .menu-header, .about-header, .contact-header,
+  .whats-new-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
+  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -2430,12 +2406,12 @@ header ul .toggle.active {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header, .menu-header, .about-header, .contact-header,
+  .whats-new-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
+  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -2834,12 +2810,12 @@ header ul .toggle.active {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header, .menu-header, .about-header, .contact-header,
+  .whats-new-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
+  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -3224,7 +3200,7 @@ header ul .toggle.active {
   .hero .thumbnail li img {
     max-width: 70%;
   }
-  .whats-new-header, .menu-header, .about-header, .contact-header {
+  .whats-new-header {
     min-height: 45vh;
     background-position: 0 20%;
   }
@@ -3365,7 +3341,7 @@ header ul .toggle.active {
   .hero .thumbnail li img {
     max-width: 80%;
   }
-  .whats-new-header, .menu-header, .about-header, .contact-header {
+  .whats-new-header {
     min-height: 45vh;
     background-position: 0 20%;
   }
