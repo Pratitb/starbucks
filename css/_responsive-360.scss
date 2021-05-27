@@ -24,6 +24,9 @@
         padding: 0.5rem;
         .logo {
           display: flex;
+          img{
+            max-height: 3rem;
+          }
         }
         ul {
           .toggle {
@@ -177,7 +180,7 @@
       flex-direction: column;
       padding: 2rem;
       .side-nav {
-          display: none;
+          display: none!important;
         width: 100%;
         .sidebar-btn {
           font-size: 1rem;

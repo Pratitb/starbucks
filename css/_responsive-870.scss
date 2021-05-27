@@ -25,6 +25,9 @@
       padding: 0.5rem;
       .logo {
         display: flex;
+        img{
+          max-height: 3rem;
+        }
       }
       ul {
         .toggle {
