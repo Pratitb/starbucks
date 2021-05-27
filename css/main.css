@@ -1550,7 +1550,7 @@ header ul .toggle.active {
   }
 }
 
-@media (min-width: 360px) and (max-width: 385px) {
+@media (min-width: 360px) and (max-width: 389px) {
   .navigation ul {
     height: 80vh;
     margin-top: 5rem;
@@ -2330,7 +2330,7 @@ header ul .toggle.active {
   }
 }
 
-@media (min-width: 760px) and (max-width: 860px) {
+@media (min-width: 760px) and (max-width: 869px) {
   .navigation ul {
     height: 80vh;
     margin-top: 5rem;
