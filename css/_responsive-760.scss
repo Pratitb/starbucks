@@ -20,16 +20,17 @@
       }
     }
     .header {
-      padding: 0 1rem;
-      header {
-        padding: 0.5rem;
+      padding: 1rem 2rem;
+      
+        
         .logo {
           display: flex;
           img{
             max-height: 3rem;
+            max-width: 100%;
           }
         }
-        ul {
+        
           .toggle {
             width: 50px;
             height: 50px;
@@ -38,8 +39,8 @@
             top: 3rem;
             background-size: 40px;
           }
-        }
-      }
+        
+      
     }
     /* HOME PAGE START */
     .hero {
@@ -87,7 +88,7 @@
     /* HOME PAGE END */
     /* NEW PAGE START */
   
-    .whats-new-header,
+    .new-header,
     .about-header {
       min-height: 30vh;
       background-position: 50% 20%;
@@ -95,8 +96,8 @@
         font-size: 4rem;
       }
     }
-    .whats-new-main {
-      .main-heading {
+    .new-main {
+      .new-main-heading {
         padding: 2rem;
         display: flex;
         justify-content: center;
@@ -107,12 +108,12 @@
           text-align: center;
         }
       }
-      .main-content {
+      .new-main-content {
         padding: 2rem;
-        .main-card {
+        .new-main-card {
           flex-direction: column;
           min-height: 70vh;
-          .main-card-content {
+          .new-main-card-content {
             display: flex;
             align-items: center;
             flex-direction: column;

@@ -14,7 +14,7 @@
       top: 0;
       left: 0;
       background: rgb(0, 112, 74);
-      clip-path: circle(50rem at bottom right);
+      clip-path: circle(50rem at 100% 120%);
       transition: 0.3s;
     }
     .content {
@@ -39,8 +39,11 @@
         padding: 1rem 1rem;
         font-size: 1.3rem;
         border-radius: 1rem;
-        transition: 0.2s;
-  
+        transition: 0.5s;
+        &:hover{
+          color: rgb(0, 112, 74);
+          background: rgba(0,0,0,0.1);
+        }
         
       }
     }
@@ -55,7 +58,7 @@
       bottom: 05%;
       display: flex;
       justify-content: space-evenly;
-      transform: translateX(-50%);
+      transform: translateX(-50%)!important;
       width: 20vw;
   
       li {

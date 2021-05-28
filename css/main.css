@@ -385,8 +385,8 @@ ul {
   top: 0;
   left: 0;
   background: #00704a;
-  -webkit-clip-path: circle(50rem at bottom right);
-          clip-path: circle(50rem at bottom right);
+  -webkit-clip-path: circle(50rem at 100% 120%);
+          clip-path: circle(50rem at 100% 120%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -420,8 +420,13 @@ ul {
   padding: 1rem 1rem;
   font-size: 1.3rem;
   border-radius: 1rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hero .menu a:hover {
+  color: #00704a;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .hero .image-box .popular-drinks {
@@ -438,8 +443,8 @@ ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
   width: 20vw;
 }
 
@@ -1165,20 +1170,18 @@ ul {
     font-size: 0.7rem;
   }
   .header {
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
   }
-  .header header {
-    padding: 0.5rem;
-  }
-  .header header .logo {
+  .header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header header .logo img {
+  .header .logo img {
     max-height: 3rem;
+    max-width: 70%;
   }
-  .header header ul .toggle {
+  .header .toggle, .header .toggle.active {
     width: 40px;
     height: 35px;
     max-width: 40px;
@@ -1232,20 +1235,14 @@ ul {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header,
-  .about-header {
+  .new-header, .menu-header, .about-header, .contact-header, .new-header, .menu-header, .about-header, .contact-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
-  .about-header .hero-heading,
-  .about-header .menu-heading,
-  .about-header .about-heading,
-  .about-header .contact-header .contact-heading,
-  .contact-header .about-header .contact-heading {
+  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading, .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading {
     font-size: 2.5rem;
   }
-  .whats-new-main .main-heading {
+  .new-main .new-main-heading {
     padding: 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1254,22 +1251,22 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .whats-new-main .main-heading h2 {
+  .new-main .new-main-heading h2 {
     font-size: 2rem;
     text-align: center;
     margin: 3rem 0 0 0;
   }
-  .whats-new-main .main-content {
+  .new-main .new-main-content {
     padding: 2rem;
   }
-  .whats-new-main .main-content .main-card {
+  .new-main .new-main-content .new-main-card {
     min-height: 85vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .whats-new-main .main-content .main-card .main-card-content {
+  .new-main .new-main-content .new-main-card .new-main-card-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1281,17 +1278,17 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .whats-new-main .main-content .main-card .main-card-content h3 {
+  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
   }
-  .whats-new-main .main-content .main-card .main-card-content p {
+  .new-main .new-main-content .new-main-card .new-main-card-content p {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: justify;
   }
-  .whats-new-main .main-content .main-card img {
+  .new-main .new-main-content .new-main-card img {
     max-width: 90%;
     border-radius: 1rem;
     -webkit-box-ordinal-group: 0;
@@ -1353,6 +1350,9 @@ ul {
     margin: 3rem 0 1rem 0;
   }
   .menu-main-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1550,20 +1550,18 @@ ul {
     font-size: 0.8rem;
   }
   .header {
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
   }
-  .header header {
-    padding: 0.5rem;
-  }
-  .header header .logo {
+  .header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header header .logo img {
+  .header .logo img {
     max-height: 3rem;
+    max-width: 70%;
   }
-  .header header ul .toggle {
+  .header .toggle {
     width: 40px;
     height: 35px;
     max-width: 40px;
@@ -1620,12 +1618,12 @@ ul {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header,
+  .new-header, .menu-header, .about-header, .contact-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
+  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -1633,7 +1631,7 @@ ul {
   .contact-header .about-header .contact-heading {
     font-size: 3rem;
   }
-  .whats-new-main .main-heading {
+  .new-main .new-main-heading {
     padding: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1642,21 +1640,21 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .whats-new-main .main-heading h2 {
+  .new-main .new-main-heading h2 {
     font-size: 2.2rem;
     text-align: center;
     margin: 3rem 0 0 0;
   }
-  .whats-new-main .main-content {
+  .new-main .new-main-content {
     padding: 2rem;
   }
-  .whats-new-main .main-content .main-card {
+  .new-main .new-main-content .new-main-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .whats-new-main .main-content .main-card .main-card-content {
+  .new-main .new-main-content .new-main-card .new-main-card-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1668,17 +1666,17 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .whats-new-main .main-content .main-card .main-card-content h3 {
+  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
     text-align: center;
   }
-  .whats-new-main .main-content .main-card .main-card-content p {
+  .new-main .new-main-content .new-main-card .new-main-card-content p {
     font-size: 1.1rem;
     line-height: 1.5rem;
     text-align: justify;
   }
-  .whats-new-main .main-content .main-card img {
+  .new-main .new-main-content .new-main-card img {
     max-width: 95%;
     border-radius: 1rem;
     -webkit-box-ordinal-group: 0;
@@ -1836,6 +1834,7 @@ ul {
   }
   .contact .feedback-text-box .feedback {
     font-size: 1.4rem;
+    line-height: 2rem;
   }
   .contact .contact-main-content {
     min-height: 100vh;
@@ -1907,6 +1906,9 @@ ul {
   .contact .contact-main-content .form .input-group textarea {
     padding: 0.8rem;
   }
+  .contact .contact-main-content .form .textarea {
+    height: 5rem;
+  }
   .contact .contact-main-content .form button[type="submit"] {
     padding: 0.5rem 0.2rem;
     font-size: 1.2rem;
@@ -1942,21 +1944,18 @@ ul {
     font-size: 0.85rem;
   }
   .header {
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
   }
-  .header header {
-    padding: 0.5rem;
-  }
-  .header header .logo {
+  .header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header header .logo img {
+  .header .logo img {
     max-height: 3rem;
     max-width: 100%;
   }
-  .header header ul .toggle {
+  .header .toggle {
     width: 40px;
     height: 35px;
     max-width: 40px;
@@ -1970,7 +1969,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 1.5rem;
+    padding: 4rem 2.5em;
   }
   .hero .circle {
     -webkit-clip-path: circle(11rem at 50% 15%);
@@ -2012,12 +2011,12 @@ ul {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header,
+  .new-header, .menu-header, .about-header, .contact-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
+  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -2025,7 +2024,7 @@ ul {
   .contact-header .about-header .contact-heading {
     font-size: 3rem;
   }
-  .whats-new-main .main-heading {
+  .new-main .new-main-heading {
     padding: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2034,22 +2033,22 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .whats-new-main .main-heading h2 {
+  .new-main .new-main-heading h2 {
     font-size: 2.5rem;
     margin: 3rem 0 0 0;
     text-align: center;
   }
-  .whats-new-main .main-content {
+  .new-main .new-main-content {
     padding: 2rem;
   }
-  .whats-new-main .main-content .main-card {
+  .new-main .new-main-content .new-main-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 70vh;
   }
-  .whats-new-main .main-content .main-card .main-card-content {
+  .new-main .new-main-content .new-main-card .new-main-card-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2061,17 +2060,17 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .whats-new-main .main-content .main-card .main-card-content h3 {
+  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
     font-size: 1.7rem;
     margin-bottom: 1rem;
     text-align: center;
   }
-  .whats-new-main .main-content .main-card .main-card-content p {
+  .new-main .new-main-content .new-main-card .new-main-card-content p {
     font-size: 1.2rem;
     line-height: 1.7rem;
     text-align: justify;
   }
-  .whats-new-main .main-content .main-card img {
+  .new-main .new-main-content .new-main-card img {
     max-width: 95%;
     border-radius: 1rem;
     -webkit-box-ordinal-group: 0;
@@ -2337,20 +2336,18 @@ ul {
     font-size: 1.2rem;
   }
   .header {
-    padding: 0 1rem;
+    padding: 1rem 2rem;
   }
-  .header header {
-    padding: 0.5rem;
-  }
-  .header header .logo {
+  .header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header header .logo img {
+  .header .logo img {
     max-height: 3rem;
+    max-width: 100%;
   }
-  .header header ul .toggle {
+  .header .toggle {
     width: 50px;
     height: 50px;
     right: 3rem;
@@ -2406,12 +2403,12 @@ ul {
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header,
+  .new-header, .menu-header, .about-header, .contact-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
+  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -2419,7 +2416,7 @@ ul {
   .contact-header .about-header .contact-heading {
     font-size: 4rem;
   }
-  .whats-new-main .main-heading {
+  .new-main .new-main-heading {
     padding: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2428,23 +2425,23 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .whats-new-main .main-heading h2 {
+  .new-main .new-main-heading h2 {
     font-size: 3rem;
     max-width: 400px;
     margin: 3rem 0 0 0;
     text-align: center;
   }
-  .whats-new-main .main-content {
+  .new-main .new-main-content {
     padding: 2rem;
   }
-  .whats-new-main .main-content .main-card {
+  .new-main .new-main-content .new-main-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 70vh;
   }
-  .whats-new-main .main-content .main-card .main-card-content {
+  .new-main .new-main-content .new-main-card .new-main-card-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2456,17 +2453,17 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .whats-new-main .main-content .main-card .main-card-content h3 {
+  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
     font-size: 2.3rem;
     margin-bottom: 1rem;
     text-align: center;
   }
-  .whats-new-main .main-content .main-card .main-card-content p {
+  .new-main .new-main-content .new-main-card .new-main-card-content p {
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: justify;
   }
-  .whats-new-main .main-content .main-card img {
+  .new-main .new-main-content .new-main-card img {
     max-width: 70%;
     border-radius: 1rem;
     -webkit-box-ordinal-group: 0;
@@ -2739,28 +2736,26 @@ ul {
     min-height: 5vh;
   }
   .pandemic p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   .header {
-    padding: 0 1rem;
+    padding: 1rem 2rem;
   }
-  .header header {
-    padding: 0.5rem;
-  }
-  .header header .logo {
+  .header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header header .logo img {
-    max-height: 3rem;
+  .header .logo img {
+    max-height: 4rem;
+    max-width: 100%;
   }
-  .header header ul .toggle {
-    width: 80px;
-    height: 80px;
+  .header .toggle, .header .toggle.active {
+    width: 60px;
+    height: 60px;
     right: 3rem;
     top: 3rem;
-    background-size: 50px;
+    background-size: 35px;
   }
   /* HOME PAGE START */
   .hero {
@@ -2768,11 +2763,11 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
   }
   .hero .circle {
-    -webkit-clip-path: circle(16rem at 50% 15%);
-            clip-path: circle(16rem at 50% 15%);
+    -webkit-clip-path: circle(14rem at 50% 10%);
+            clip-path: circle(14rem at 50% 10%);
   }
   .hero .content {
     -webkit-box-ordinal-group: 1;
@@ -2794,28 +2789,28 @@ ul {
             order: -1;
   }
   .hero .image-box img {
-    max-width: 400px;
+    max-width: 320px;
   }
   .hero .menu a {
-    font-size: 2rem;
-    padding: 1.5rem;
+    font-size: 1.5rem;
+    padding: 1.2rem;
   }
   .hero .thumbnail {
-    bottom: 37%;
-    width: 70vw;
-    left: 50%;
+    bottom: 45%;
+    width: 55vw;
+    left: 53%;
   }
   .hero .thumbnail li img {
     max-width: 60%;
   }
   /* HOME PAGE END */
   /* NEW PAGE START */
-  .whats-new-header,
+  .new-header, .menu-header, .about-header, .contact-header,
   .about-header {
     min-height: 30vh;
     background-position: 50% 20%;
   }
-  .whats-new-header .hero-heading, .whats-new-header .menu-header .menu-heading, .menu-header .whats-new-header .menu-heading, .whats-new-header .about-header .menu-heading, .about-header .whats-new-header .menu-heading, .whats-new-header .about-header .about-heading, .about-header .whats-new-header .about-heading, .whats-new-header .contact-header .contact-heading, .contact-header .whats-new-header .contact-heading,
+  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
   .about-header .hero-heading,
   .about-header .menu-heading,
   .about-header .about-heading,
@@ -2823,7 +2818,7 @@ ul {
   .contact-header .about-header .contact-heading {
     font-size: 6rem;
   }
-  .whats-new-main .main-heading {
+  .new-main .new-main-heading {
     padding: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2832,23 +2827,23 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .whats-new-main .main-heading h2 {
+  .new-main .new-main-heading h2 {
     font-size: 4rem;
     max-width: 400px;
     margin: 3rem 0 0 0;
     text-align: center;
   }
-  .whats-new-main .main-content {
+  .new-main .new-main-content {
     padding: 2rem;
   }
-  .whats-new-main .main-content .main-card {
+  .new-main .new-main-content .new-main-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 70vh;
+    min-height: 100vh;
   }
-  .whats-new-main .main-content .main-card .main-card-content {
+  .new-main .new-main-content .new-main-card .new-main-card-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2861,20 +2856,20 @@ ul {
             flex-direction: column;
     max-width: 700px;
   }
-  .whats-new-main .main-content .main-card .main-card-content h3 {
+  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
     font-size: 2.9rem;
     margin-bottom: 1rem;
     text-align: center;
   }
-  .whats-new-main .main-content .main-card .main-card-content p {
+  .new-main .new-main-content .new-main-card .new-main-card-content p {
     font-size: 2rem;
     line-height: 3rem;
     text-align: justify;
   }
-  .whats-new-main .main-content .main-card .main-card-content .less-important-text {
+  .new-main .new-main-content .new-main-card .new-main-card-content .less-important-text {
     font-size: 1.5rem !important;
   }
-  .whats-new-main .main-content .main-card img {
+  .new-main .new-main-content .new-main-card img {
     max-width: 70%;
     border-radius: 1rem;
     -webkit-box-ordinal-group: 0;
@@ -2985,7 +2980,7 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 10rem;
-    min-height: 75vh;
+    min-height: 100vh;
   }
   .about .mission img,
   .about .company img,
@@ -3044,7 +3039,7 @@ ul {
         flex-wrap: nowrap;
   }
   .contact .contact-main-content .contact-information-card {
-    min-height: 60vh;
+    min-height: 80vh;
     padding: 3rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3071,7 +3066,7 @@ ul {
     line-height: 2.5rem;
   }
   .contact .contact-main-content .contact-information-card .contact-details {
-    min-height: 22vh;
+    min-height: 30vh;
   }
   .contact .contact-main-content .contact-information-card .contact-details .details-box i {
     font-size: 3rem;
@@ -3083,7 +3078,7 @@ ul {
   }
   .contact .contact-main-content .contact-information-card .social-icons {
     left: 1rem;
-    width: 38vw;
+    width: 45vw;
   }
   .contact .contact-main-content .contact-information-card .social-icons .social-icon {
     padding: 1.3rem;
@@ -3094,10 +3089,10 @@ ul {
   .contact .contact-main-content .form {
     width: 700px;
     padding: 4rem;
-    min-height: 80vh;
+    min-height: 100vh;
   }
   .contact .contact-main-content .form .input-group {
-    height: 3rem;
+    height: 4rem;
   }
   .contact .contact-main-content .form .input-group:hover label {
     bottom: 1rem;
@@ -3137,6 +3132,7 @@ ul {
     padding: 1.4rem 0.2rem;
     font-size: 2.5rem;
     text-align: center;
+    margin-top: 5rem;
   }
   .navigation-buttons .backward,
   .navigation-buttons .forward {
@@ -3170,9 +3166,6 @@ ul {
     width: 40px;
     height: 40px;
   }
-  .header header {
-    padding: 0;
-  }
   .hero {
     padding: 3rem;
   }
@@ -3200,21 +3193,21 @@ ul {
   .hero .thumbnail li img {
     max-width: 70%;
   }
-  .whats-new-header {
+  .new-header, .menu-header, .about-header, .contact-header {
     min-height: 45vh;
     background-position: 0 20%;
   }
-  .whats-new-main .main-heading h2 {
+  .new-main .new-main-heading h2 {
     font-size: 3rem;
   }
-  .whats-new-main .main-content .main-card img {
+  .new-main .new-main-content .new-main-card img {
     max-width: 40%;
   }
-  .whats-new-main .navigation-buttons .backward, .whats-new-main .navigation-buttons .forward {
+  .new-main .navigation-buttons .backward, .new-main .navigation-buttons .forward {
     font-size: 2rem;
     padding: 1rem;
   }
-  .whats-new-main .navigation-buttons .backward .arrows, .whats-new-main .navigation-buttons .forward .arrows {
+  .new-main .navigation-buttons .backward .arrows, .new-main .navigation-buttons .forward .arrows {
     font-size: 2rem;
   }
   .mobile-menu {
@@ -3311,9 +3304,6 @@ ul {
     width: 40px;
     height: 40px;
   }
-  .header header {
-    padding: 0;
-  }
   .hero {
     padding: 3rem;
   }
@@ -3341,17 +3331,17 @@ ul {
   .hero .thumbnail li img {
     max-width: 80%;
   }
-  .whats-new-header {
+  .new-header, .menu-header, .about-header, .contact-header {
     min-height: 45vh;
     background-position: 0 20%;
   }
-  .whats-new-main .main-heading h2 {
+  .new-main .new-main-heading h2 {
     font-size: 3.5rem;
   }
-  .whats-new-main .main-content {
+  .new-main .new-main-content {
     padding: 2rem 1rem;
   }
-  .whats-new-main .main-content .main-card img {
+  .new-main .new-main-content .new-main-card img {
     max-width: 40%;
   }
   .menu-main .menu-main-heading h2 {

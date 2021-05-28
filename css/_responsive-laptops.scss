@@ -26,9 +26,7 @@
             width: 40px;
             height: 40px;
         }
-        header{
-            padding: 0;
-        }
+        
     }
     .hero{
         padding: 3rem;
@@ -68,18 +66,18 @@
             }
         }
     }
-    .whats-new-header{
+    .new-header{
         min-height: 45vh;
         background-position: 0 20%;
     }
-    .whats-new-main{
-        .main-heading{
+    .new-main{
+        .new-main-heading{
             h2{
                 font-size: 3rem;
             }
         }
-        .main-content{
-            .main-card{
+        .new-main-content{
+            .new-main-card{
                 img{
                     max-width: 40%;
                 }
@@ -207,9 +205,7 @@
             width: 40px;
             height: 40px;
         }
-        header{
-            padding: 0;
-        }
+        
     }
     .hero{
         padding: 3rem;
@@ -249,19 +245,19 @@
             }
         }
     }
-    .whats-new-header{
+    .new-header{
         min-height: 45vh;
         background-position: 0 20%;
     }
-    .whats-new-main{
-        .main-heading{
+    .new-main{
+        .new-main-heading{
             h2{
                 font-size: 3.5rem;
             }
         }
-        .main-content{
+        .new-main-content{
             padding: 2rem 1rem;
-            .main-card{
+            .new-main-card{
                 img{
                     max-width: 40%;
                 }

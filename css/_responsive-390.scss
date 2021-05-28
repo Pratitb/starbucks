@@ -20,9 +20,9 @@
       }
     }
     .header {
-      padding: 0 1rem;
-      header {
-        padding: 0.5rem;
+      padding: 0.5rem 1rem;
+      
+        
         .logo {
           display: flex;
           img{
@@ -30,7 +30,7 @@
             max-width: 100%;
           }
         }
-        ul {
+        
           .toggle {
             width: 40px;
             height: 35px;
@@ -39,13 +39,13 @@
             top: 2.2rem;
             background-size: 22px;
           }
-        }
-      }
+        
+      
     }
     /* HOME PAGE START */
     .hero {
       flex-direction: column;
-      padding: 1.5rem;
+      padding: 4rem 2.5em;
       .circle {
         clip-path: circle(11rem at 50% 15%);
       }
@@ -87,7 +87,7 @@
     /* HOME PAGE END */
     /* NEW PAGE START */
   
-    .whats-new-header,
+    .new-header,
     .about-header {
       min-height: 30vh;
       background-position: 50% 20%;
@@ -95,8 +95,8 @@
         font-size: 3rem;
       }
     }
-    .whats-new-main {
-      .main-heading {
+    .new-main {
+      .new-main-heading {
         padding: 2rem;
         display: flex;
         justify-content: center;
@@ -106,12 +106,12 @@
           text-align: center;
         }
       }
-      .main-content {
+      .new-main-content {
         padding: 2rem;
-        .main-card {
+        .new-main-card {
           flex-direction: column;
           min-height: 70vh;
-          .main-card-content {
+          .new-main-card-content {
             display: flex;
             align-items: center;
             flex-direction: column;
