@@ -1,0 +1,33 @@
+.pandemic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(0, 112, 74);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.3rem;
+  
+    .typing {
+      position: relative;
+      margin-left: 0.5rem;
+  
+      &::after {
+        content: "";
+        position: absolute;
+        border-right: 2px solid rgba(0, 0, 0, 0.9);
+        width: 1px;
+        height: 100%;
+        right: -1.5%;
+        animation: blink 0.5s 1 linear;
+      }
+    }
+    @keyframes blink {
+      0% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }

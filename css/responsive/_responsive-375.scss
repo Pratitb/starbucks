@@ -1,0 +1,139 @@
+@media(min-width:375px) and (max-width:389px){
+    .navigation{
+        ul{
+            a{
+                font-size: 4rem;
+            }
+        }
+    }
+    .pandemic{
+        p{
+            font-size: 0.9rem;
+        }
+    }
+    .header{
+        .logo{
+            img{
+                max-width: 90%;
+            }
+        }
+        .toggle, .toggle.active{
+            top: 2.5rem;
+        }
+    }
+    .hero{
+        .image-box{
+            img{
+                max-width: 210px;
+            }
+        }
+        .circle{
+            clip-path: circle(10rem at 50% 12%);
+        }
+        .content{
+            margin-top: 5rem;
+            .punch-line{
+                font-size: 2rem;
+            }
+            .informative{
+                line-height: 1.4rem;
+            }
+        }
+        .thumbnail{
+            bottom: 40%;
+            width: 80vw;
+            li{
+                img{
+                    max-width: 65%;
+                }
+            }
+        }
+        .menu{
+            a{
+                font-size: 1.1rem;
+                padding: 0.8rem;
+            }
+        }
+    }
+    .new-main{
+        .new-main-content{
+            .new-main-card{
+                min-height: 80vh;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+    .mobile-menu{
+        .menu-items{
+            min-height: 9vh;
+            i{
+                font-size: 1.3rem;
+            }
+            .menu-names{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .about{
+        .accordions{
+            .accordion{
+                .content-box{
+                    .accordion-label{
+                        font-size: 1.3rem!important;
+                    }
+                    .accordion-content{
+                        font-size: 1.1rem!important;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        .contact-main-content{
+            .contact-information-card{
+                .information-heading{
+                    .information-heading-one{
+                        font-size: 1.5rem;
+                    }
+                    .information-heading-two{
+                        font-size: 1rem;
+                    }
+                }
+                .contact-details{
+                    min-height: 18vh;
+                    .details-box{
+                        i{
+                            font-size: 1.5rem;
+                        }
+                        .contact-link{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                min-height: 60vh;
+                max-width: 300px;
+                .social-icons{
+                    left: 3rem;
+                    width: 35vw;
+                    .social-icon{
+                        padding: 0.6rem;
+                        i{
+                            font-size: 1.5rem;
+                            
+                        }
+                    }
+                }
+                
+            }
+            .form{
+                max-width: 300px;
+                .textarea-group{
+                    height: 10rem;
+                    textarea{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

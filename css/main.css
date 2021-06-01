@@ -34,10 +34,6 @@ ul {
   font-size: 0.5rem;
 }
 
-.arrows {
-  font-size: 2.5rem;
-}
-
 .menu-active {
   background: #00704a !important;
   color: white !important;
@@ -59,6 +55,10 @@ ul {
   display: block;
   text-align: center;
   width: 50vw;
+  font-size: 2.5rem;
+}
+
+.navigation-buttons .arrows {
   font-size: 2.5rem;
 }
 
@@ -213,48 +213,6 @@ ul {
           transition-delay: 0.5s;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem 4rem;
-}
-
-.header .logo img {
-  position: relative;
-  z-index: 2;
-  max-width: 50%;
-}
-
-.header .toggle {
-  position: fixed;
-  right: 6rem;
-  top: 2rem;
-  background: white url(../images/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-  z-index: 2;
-  width: 50px;
-  height: 50px;
-}
-
-.header .toggle.active {
-  background: white url(../images/close.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px;
-  width: 50px;
-  height: 50px;
-}
-
 .pandemic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,6 +262,48 @@ ul {
   100% {
     opacity: 1;
   }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+.header .logo img {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+}
+
+.header .toggle {
+  position: fixed;
+  right: 6rem;
+  top: 2rem;
+  background: white url(../images/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+}
+
+.header .toggle.active {
+  background: white url(../images/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  width: 50px;
+  height: 50px;
 }
 
 @media (min-width: 320px) and (max-width: 1025px) {
@@ -357,7 +357,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .mobile-menu {
     display: none !important;
   }
@@ -1152,6 +1152,390 @@ ul {
   border: 1px solid #000;
 }
 
+@media (min-width: 320px) and (max-width: 1025px) {
+  .navigation ul {
+    height: 80vh;
+    margin-top: 5rem;
+  }
+  .navigation ul a {
+    font-size: 3rem;
+  }
+  .navigation ul a::before {
+    font-size: 2rem;
+  }
+  .pandemic {
+    padding: 0.6rem;
+  }
+  .pandemic p {
+    font-size: 0.7rem;
+  }
+  .header {
+    padding: 0.5rem 1rem;
+  }
+  .header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .logo img {
+    max-height: 3rem;
+    max-width: 70%;
+  }
+  .header .toggle, .header .toggle.active {
+    width: 40px;
+    height: 35px;
+    max-width: 40px;
+    right: 3rem;
+    top: 2.2rem;
+    background-size: 22px;
+  }
+  /* HOME PAGE START */
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5rem;
+  }
+  .hero .circle {
+    -webkit-clip-path: circle(7rem at 50% 6%);
+            clip-path: circle(7rem at 50% 6%);
+  }
+  .hero .content {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .hero .content .punch-line {
+    font-size: 1.5rem;
+  }
+  .hero .content .informative {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  .hero .image-box {
+    margin-bottom: 5rem;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .hero .image-box img {
+    max-width: 130px;
+  }
+  .hero .menu a {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+  .hero .thumbnail {
+    bottom: 49%;
+    width: 60vw;
+    left: 50%;
+  }
+  .hero .thumbnail li img {
+    max-width: 65%;
+  }
+  /* HOME PAGE END */
+  /* NEW PAGE START */
+  .new-header, .menu-header, .about-header, .contact-header, .new-header, .menu-header, .about-header, .contact-header {
+    min-height: 30vh;
+    background-position: 50% 20%;
+  }
+  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading, .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading {
+    font-size: 2.5rem;
+  }
+  .new-main .new-main-heading {
+    padding: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .new-main .new-main-heading h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 3rem 0 0 0;
+  }
+  .new-main .new-main-content {
+    padding: 2rem;
+  }
+  .new-main .new-main-content .new-main-card {
+    min-height: 85vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .new-main .new-main-content .new-main-card .new-main-card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .new-main .new-main-content .new-main-card .new-main-card-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  .new-main .new-main-content .new-main-card img {
+    max-width: 90%;
+    border-radius: 1rem;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  /* NEW PAGE END */
+  /* MENU PAGE START */
+  .mobile-menu {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 90%;
+    padding: 0.2rem 0.5rem;
+    bottom: 2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: #00704a;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 1rem;
+    z-index: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .mobile-menu .menu-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    min-height: 10vh;
+    word-wrap: break-word;
+    max-width: 10%;
+  }
+  .mobile-menu .menu-items i {
+    font-size: 1.1rem;
+    color: gold;
+  }
+  .mobile-menu .menu-items .menu-names {
+    color: #fff;
+    font-size: 0.7rem;
+  }
+  .menu-main .menu-main-heading h2 {
+    font-size: 2rem;
+    margin: 3rem 0 1rem 0;
+  }
+  .menu-main-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+  }
+  .menu-main-content .side-nav {
+    display: none !important;
+    width: 100%;
+  }
+  .menu-main-content .side-nav .sidebar-btn {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .menu-main-content .products-container .product-card {
+    margin-bottom: 5rem;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .menu-main-content .products-container .product-card h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .menu-main-content .products-container .product-card h4 {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  .menu-main-content .products-container .product-card h5 {
+    font-size: 0.8rem;
+  }
+  .menu-main-content .products-container .product-card img {
+    max-width: 160px;
+    margin-bottom: 2rem;
+  }
+  /* MENU PAGE END */
+  /* ABOUT PAGE START */
+  .about {
+    padding: 5rem 1rem 0 1rem;
+  }
+  .about .mission,
+  .about .company,
+  .about .coffee {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10rem;
+  }
+  .about .mission img,
+  .about .company img,
+  .about .coffee img {
+    max-width: 85%;
+    border-radius: 1rem;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .about .mission .accordions,
+  .about .company .accordions,
+  .about .coffee .accordions {
+    max-width: 90%;
+    min-height: 18vh;
+  }
+  .about .mission .accordions .accordion .content-box .accordion-label,
+  .about .company .accordions .accordion .content-box .accordion-label,
+  .about .coffee .accordions .accordion .content-box .accordion-label {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  .about .mission .accordions .accordion .content-box .accordion-label::before,
+  .about .company .accordions .accordion .content-box .accordion-label::before,
+  .about .coffee .accordions .accordion .content-box .accordion-label::before {
+    font-size: 2rem;
+  }
+  .about .mission .accordions .accordion .content-box .accordion-content,
+  .about .company .accordions .accordion .content-box .accordion-content,
+  .about .coffee .accordions .accordion .content-box .accordion-content {
+    font-size: 1rem;
+  }
+  /* ABOUT PAGE END */
+  .contact-header {
+    background-position: 30% 27%;
+  }
+  .contact {
+    padding: 5rem 2rem;
+  }
+  .contact .feedback-text-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact .feedback-text-box .feedback {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  .contact .contact-main-content {
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .contact .contact-main-content .contact-information-card {
+    min-height: 70vh;
+    padding: 2rem 1.4rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 250px;
+    margin-bottom: 3rem;
+  }
+  .contact .contact-main-content .contact-information-card .circle-two {
+    -webkit-clip-path: circle(2rem at 97% 97%);
+            clip-path: circle(2rem at 97% 97%);
+  }
+  .contact .contact-main-content .contact-information-card .circle-one {
+    -webkit-clip-path: circle(4rem at 100% 97%);
+            clip-path: circle(4rem at 100% 97%);
+  }
+  .contact .contact-main-content .contact-information-card .circle {
+    -webkit-clip-path: circle(5rem at 94% 94%);
+            clip-path: circle(5rem at 94% 94%);
+  }
+  .contact .contact-main-content .contact-information-card .information-heading .information-heading-one {
+    font-size: 1.3rem;
+  }
+  .contact .contact-main-content .contact-information-card .information-heading .information-heading-two {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details .details-box i {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details .contact-link {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons {
+    left: 1rem;
+    width: 44vw;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons .social-icon {
+    padding: 0.5rem;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons .social-icon i {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .form {
+    max-width: 250px;
+  }
+  .contact .contact-main-content .form .input-group {
+    height: 2rem;
+  }
+  .contact .contact-main-content .form .input-group label {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .form .input-group textarea {
+    padding: 0.8rem;
+  }
+  .contact .contact-main-content .form .textarea-group {
+    height: 3rem;
+  }
+  .contact .contact-main-content .form button[type="submit"] {
+    padding: 0.5rem 0.2rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .navigation-buttons .backward,
+  .navigation-buttons .forward {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .navigation-buttons .backward .arrows,
+  .navigation-buttons .forward .arrows {
+    font-size: 1.2rem;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 359px) {
   .navigation ul {
     height: 80vh;
@@ -1531,1761 +1915,477 @@ ul {
   }
 }
 
-@media (min-width: 360px) and (max-width: 389px) {
-  .navigation ul {
-    height: 80vh;
-    margin-top: 5rem;
-  }
+@media (min-width: 360px) and (max-width: 374px) {
   .navigation ul a {
     font-size: 4rem;
   }
-  .navigation ul a::before {
-    font-size: 5rem;
+  .header .logo img {
+    max-width: 78%;
   }
   .pandemic {
-    padding: 0.6rem;
-    min-height: 5vh;
+    padding: 0.8rem;
   }
   .pandemic p {
     font-size: 0.8rem;
   }
-  .header {
-    padding: 0.5rem 1rem;
-  }
-  .header .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header .logo img {
-    max-height: 3rem;
-    max-width: 70%;
-  }
-  .header .toggle {
-    width: 40px;
-    height: 35px;
-    max-width: 40px;
-    right: 3rem;
-    top: 2.2rem;
-    background-size: 22px;
-  }
-  /* HOME PAGE START */
   .hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 1.5rem;
-  }
-  .hero .circle {
-    -webkit-clip-path: circle(10rem at 52% 14%);
-            clip-path: circle(10rem at 52% 14%);
-  }
-  .hero .content {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    margin-top: 3rem;
-  }
-  .hero .content .punch-line {
-    font-size: 2rem;
-  }
-  .hero .content .informative {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .hero .image-box {
-    margin-bottom: 5rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .hero .image-box img {
-    max-width: 220px;
-  }
-  .hero .menu a {
-    font-size: 1rem;
-    padding: 0.8rem;
+    min-height: 85vh;
   }
   .hero .thumbnail {
     bottom: 43%;
-    width: 80vw;
-    left: 50%;
   }
-  .hero .thumbnail li img {
-    max-width: 75%;
+  .hero .image-box img {
+    max-width: 160px;
   }
-  /* HOME PAGE END */
-  /* NEW PAGE START */
-  .new-header, .menu-header, .about-header, .contact-header,
-  .about-header {
-    min-height: 30vh;
-    background-position: 50% 20%;
-  }
-  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
-  .about-header .hero-heading,
-  .about-header .menu-heading,
-  .about-header .about-heading,
-  .about-header .contact-header .contact-heading,
-  .contact-header .about-header .contact-heading {
-    font-size: 3rem;
-  }
-  .new-main .new-main-heading {
-    padding: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .new-main .new-main-heading h2 {
-    font-size: 2.2rem;
-    text-align: center;
-    margin: 3rem 0 0 0;
-  }
-  .new-main .new-main-content {
-    padding: 2rem;
-  }
-  .new-main .new-main-content .new-main-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content p {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    text-align: justify;
-  }
-  .new-main .new-main-content .new-main-card img {
-    max-width: 95%;
-    border-radius: 1rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  /* NEW PAGE END */
-  /* MENU PAGE START */
-  .mobile-menu {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 90%;
-    padding: 0.4rem 0.5rem;
-    bottom: 2rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background: #00704a;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 1rem;
-    z-index: 1;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .mobile-menu .menu-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    min-height: 8vh;
-    word-wrap: break-word;
-    max-width: 10%;
-  }
-  .mobile-menu .menu-items i {
-    font-size: 1.4rem;
-    color: gold;
-  }
-  .mobile-menu .menu-items .menu-names {
-    color: #fff;
-    font-size: 0.8rem;
-  }
-  .menu-main .menu-main-heading h2 {
-    font-size: 2rem;
-    margin: 3rem 0 1rem 0;
-  }
-  .menu-main-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2rem;
-  }
-  .menu-main-content .side-nav {
-    display: none !important;
-    width: 100%;
-  }
-  .menu-main-content .side-nav .sidebar-btn {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-  .menu-main-content .products-container {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu-main-content .products-container .product-card {
-    margin-bottom: 5rem;
-  }
-  .menu-main-content .products-container .product-card h3 {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-  .menu-main-content .products-container .product-card h4 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: justify;
-  }
-  .menu-main-content .products-container .product-card h5 {
-    font-size: 0.9rem;
+  .hero .circle {
+    -webkit-clip-path: circle(8rem at 50% 11%);
+            clip-path: circle(8rem at 50% 11%);
   }
   .menu-main-content .products-container .product-card img {
-    max-width: 230px;
-    margin-bottom: 2rem;
+    max-width: 190px;
   }
-  /* MENU PAGE END */
-  /* ABOUT PAGE START */
-  .about .mission,
-  .about .company,
-  .about .coffee {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 10rem;
+  .mobile-menu .menu-items {
+    min-height: 8vh;
   }
-  .about .mission img,
-  .about .company img,
-  .about .coffee img {
-    max-width: 90%;
-    border-radius: 1rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+  .mobile-menu .menu-items i {
+    font-size: 1.2rem;
   }
-  .about .mission .accordions,
-  .about .company .accordions,
-  .about .coffee .accordions {
-    max-width: 90%;
-    min-height: 12vh;
+  .mobile-menu .menu-items .menu-names {
+    font-size: 0.8rem;
   }
-  .about .mission .accordions .accordion .content-box .accordion-label,
-  .about .company .accordions .accordion .content-box .accordion-label,
-  .about .coffee .accordions .accordion .content-box .accordion-label {
-    font-size: 1rem;
-    padding: 0.8rem;
+  .about .accordions .accordion .content-box .accordion-label {
+    font-size: 1.3rem !important;
   }
-  .about .mission .accordions .accordion .content-box .accordion-label::before,
-  .about .company .accordions .accordion .content-box .accordion-label::before,
-  .about .coffee .accordions .accordion .content-box .accordion-label::before {
-    font-size: 2rem;
+  .about .accordions .accordion .content-box .accordion-content {
+    line-height: 1.5rem !important;
   }
-  .about .mission .accordions .accordion .content-box .accordion-content,
-  .about .company .accordions .accordion .content-box .accordion-content,
-  .about .coffee .accordions .accordion .content-box .accordion-content {
-    font-size: 1rem;
-  }
-  /* ABOUT PAGE END */
-  .contact-header {
-    background-position: 30% 27%;
-  }
-  .contact {
-    padding: 5rem 2rem;
-  }
-  .contact .feedback-text-box {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .contact .feedback-text-box .feedback {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-  .contact .contact-main-content {
-    min-height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+  .contact .contact-main-content .form {
+    max-width: 300px;
   }
   .contact .contact-main-content .contact-information-card {
-    min-height: 55vh;
-    padding: 2rem 1.4rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     max-width: 300px;
-    margin-bottom: 3rem;
-  }
-  .contact .contact-main-content .contact-information-card .circle-two {
-    -webkit-clip-path: circle(2rem at 97% 97%);
-            clip-path: circle(2rem at 97% 97%);
-  }
-  .contact .contact-main-content .contact-information-card .circle-one {
-    -webkit-clip-path: circle(4rem at 100% 97%);
-            clip-path: circle(4rem at 100% 97%);
-  }
-  .contact .contact-main-content .contact-information-card .circle {
-    -webkit-clip-path: circle(5rem at 94% 94%);
-            clip-path: circle(5rem at 94% 94%);
-  }
-  .contact .contact-main-content .contact-information-card .information-heading .information-heading-one {
-    font-size: 1.3rem;
   }
   .contact .contact-main-content .contact-information-card .information-heading .information-heading-two {
     font-size: 1rem;
-    line-height: 1.3rem;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details {
-    min-height: 18vh;
   }
   .contact .contact-main-content .contact-information-card .contact-details .details-box i {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .contact .contact-main-content .contact-information-card .contact-details .contact-link {
     font-size: 1rem;
-    margin-left: 0.5rem;
-    padding: 0.5rem;
   }
   .contact .contact-main-content .contact-information-card .social-icons {
-    left: 1rem;
-    width: 44vw;
+    width: 55vw;
   }
   .contact .contact-main-content .contact-information-card .social-icons .social-icon {
     padding: 0.6rem;
   }
   .contact .contact-main-content .contact-information-card .social-icons .social-icon i {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 389px) {
+  .navigation ul a {
+    font-size: 4rem;
+  }
+  .pandemic p {
+    font-size: 0.9rem;
+  }
+  .header .logo img {
+    max-width: 90%;
+  }
+  .header .toggle, .header .toggle.active {
+    top: 2.5rem;
+  }
+  .hero .image-box img {
+    max-width: 210px;
+  }
+  .hero .circle {
+    -webkit-clip-path: circle(10rem at 50% 12%);
+            clip-path: circle(10rem at 50% 12%);
+  }
+  .hero .content {
+    margin-top: 5rem;
+  }
+  .hero .content .punch-line {
+    font-size: 2rem;
+  }
+  .hero .content .informative {
+    line-height: 1.4rem;
+  }
+  .hero .thumbnail {
+    bottom: 40%;
+    width: 80vw;
+  }
+  .hero .thumbnail li img {
+    max-width: 65%;
+  }
+  .hero .menu a {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+  .new-main .new-main-content .new-main-card {
+    min-height: 80vh;
+    margin-bottom: 0rem;
+  }
+  .mobile-menu .menu-items {
+    min-height: 9vh;
+  }
+  .mobile-menu .menu-items i {
     font-size: 1.3rem;
+  }
+  .mobile-menu .menu-items .menu-names {
+    font-size: 0.9rem;
+  }
+  .about .accordions .accordion .content-box .accordion-label {
+    font-size: 1.3rem !important;
+  }
+  .about .accordions .accordion .content-box .accordion-content {
+    font-size: 1.1rem !important;
+  }
+  .contact .contact-main-content .contact-information-card {
+    min-height: 60vh;
+    max-width: 300px;
+  }
+  .contact .contact-main-content .contact-information-card .information-heading .information-heading-one {
+    font-size: 1.5rem;
+  }
+  .contact .contact-main-content .contact-information-card .information-heading .information-heading-two {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details {
+    min-height: 18vh;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details .details-box i {
+    font-size: 1.5rem;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details .details-box .contact-link {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons {
+    left: 3rem;
+    width: 35vw;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons .social-icon {
+    padding: 0.6rem;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons .social-icon i {
+    font-size: 1.5rem;
   }
   .contact .contact-main-content .form {
     max-width: 300px;
-    min-height: 65vh;
   }
-  .contact .contact-main-content .form .input-group {
-    height: 3rem;
+  .contact .contact-main-content .form .textarea-group {
+    height: 10rem;
   }
-  .contact .contact-main-content .form .input-group label {
+  .contact .contact-main-content .form .textarea-group textarea {
     font-size: 1rem;
-  }
-  .contact .contact-main-content .form .input-group textarea {
-    padding: 0.8rem;
-  }
-  .contact .contact-main-content .form .textarea {
-    height: 5rem;
-  }
-  .contact .contact-main-content .form button[type="submit"] {
-    padding: 0.5rem 0.2rem;
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  .navigation-buttons .backward,
-  .navigation-buttons .forward {
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
-  .navigation-buttons .backward .arrows,
-  .navigation-buttons .forward .arrows {
-    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 390px) and (max-width: 430px) {
-  .navigation ul {
-    height: 80vh;
-    margin-top: 5rem;
-  }
   .navigation ul a {
-    font-size: 4.5rem;
-  }
-  .navigation ul a::before {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .pandemic {
-    padding: 0.6rem;
-    min-height: 5vh;
+    padding: 0.8rem;
   }
   .pandemic p {
-    font-size: 0.85rem;
-  }
-  .header {
-    padding: 0.5rem 1rem;
-  }
-  .header .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    font-size: 0.9rem;
   }
   .header .logo img {
-    max-height: 3rem;
-    max-width: 100%;
+    max-width: 90%;
   }
-  .header .toggle {
-    width: 40px;
-    height: 35px;
-    max-width: 40px;
-    right: 3rem;
-    top: 2.2rem;
-    background-size: 22px;
-  }
-  /* HOME PAGE START */
-  .hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 4rem 2.5em;
-  }
-  .hero .circle {
-    -webkit-clip-path: circle(11rem at 50% 15%);
-            clip-path: circle(11rem at 50% 15%);
-  }
-  .hero .content {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    margin-top: 3rem;
-  }
-  .hero .content .punch-line {
-    font-size: 2rem;
-  }
-  .hero .content .informative {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+  .new-hero .new-header .hero-heading, .new-hero .menu-header .hero-heading, .new-hero .about-header .hero-heading, .new-hero .contact-header .hero-heading, .menu-header .new-hero .new-header .menu-heading, .new-hero .menu-header .menu-heading, .menu-header .new-hero .contact-header .menu-heading, .about-header .new-hero .new-header .menu-heading, .new-hero .about-header .menu-heading, .about-header .new-hero .contact-header .menu-heading, .about-header .new-hero .new-header .about-heading, .about-header .new-hero .menu-header .about-heading, .new-hero .about-header .about-heading, .about-header .new-hero .contact-header .about-heading, .contact-header .new-hero .new-header .contact-heading, .contact-header .new-hero .menu-header .contact-heading, .contact-header .new-hero .about-header .contact-heading, .new-hero .contact-header .contact-heading {
+    font-size: 3rem;
   }
   .hero .image-box {
-    margin-bottom: 5rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    margin-bottom: 10rem;
   }
   .hero .image-box img {
-    max-width: 250px;
+    max-width: 230px;
   }
-  .hero .menu a {
-    font-size: 1rem;
-    padding: 0.8rem;
+  .hero .circle {
+    -webkit-clip-path: circle(10rem at 50% 6%);
+            clip-path: circle(10rem at 50% 6%);
+  }
+  .hero .content .punch-line {
+    font-size: 2.2rem;
+  }
+  .hero .content .informative {
+    line-height: 1.6rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
   }
   .hero .thumbnail {
     bottom: 40%;
-    width: 70vw;
-    left: 50%;
+    width: 80vw;
   }
   .hero .thumbnail li img {
-    max-width: 80%;
+    max-width: 65%;
   }
-  /* HOME PAGE END */
-  /* NEW PAGE START */
-  .new-header, .menu-header, .about-header, .contact-header,
-  .about-header {
-    min-height: 30vh;
-    background-position: 50% 20%;
-  }
-  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
-  .about-header .hero-heading,
-  .about-header .menu-heading,
-  .about-header .about-heading,
-  .about-header .contact-header .contact-heading,
-  .contact-header .about-header .contact-heading {
-    font-size: 3rem;
-  }
-  .new-main .new-main-heading {
-    padding: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .new-main .new-main-heading h2 {
-    font-size: 2.5rem;
-    margin: 3rem 0 0 0;
-    text-align: center;
-  }
-  .new-main .new-main-content {
-    padding: 2rem;
+  .hero .menu a {
+    font-size: 1.1rem;
+    padding: 0.8rem;
   }
   .new-main .new-main-content .new-main-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    min-height: 70vh;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    min-height: 75vh;
+    margin-bottom: 0rem;
   }
   .new-main .new-main-content .new-main-card .new-main-card-content h3 {
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    font-size: 1.6rem;
   }
   .new-main .new-main-content .new-main-card .new-main-card-content p {
     font-size: 1.2rem;
-    line-height: 1.7rem;
-    text-align: justify;
-  }
-  .new-main .new-main-content .new-main-card img {
-    max-width: 95%;
-    border-radius: 1rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  /* NEW PAGE END */
-  /* MENU PAGE START */
-  .mobile-menu {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 90%;
-    padding: 0.4rem 0.5rem;
-    bottom: 2rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background: #00704a;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 1rem;
-    z-index: 1;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .mobile-menu .menu-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    min-height: 7vh;
-    word-wrap: break-word;
-    max-width: 10%;
-  }
-  .mobile-menu .menu-items i {
-    font-size: 1.4rem;
-    color: gold;
-  }
-  .mobile-menu .menu-items .menu-names {
-    color: #fff;
-    font-size: 0.9rem;
-  }
-  .menu-main .menu-main-heading h2 {
-    font-size: 2.5rem;
-    margin: 3rem 0 1rem 0;
-  }
-  .menu-main-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2rem;
-  }
-  .menu-main-content .side-nav {
-    display: none !important;
-    width: 100%;
-  }
-  .menu-main-content .side-nav .sidebar-btn {
-    font-size: 1rem;
-    max-width: 100%;
   }
   .menu-main-content .products-container {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu-main-content .products-container .product-card {
-    margin-bottom: 5rem;
-  }
-  .menu-main-content .products-container .product-card h3 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .menu-main-content .products-container .product-card h4 {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    text-align: justify;
-  }
-  .menu-main-content .products-container .product-card h5 {
-    font-size: 1.1rem;
   }
   .menu-main-content .products-container .product-card img {
     max-width: 230px;
-    margin-bottom: 2rem;
-  }
-  /* MENU PAGE END */
-  /* ABOUT PAGE START */
-  .about .mission,
-  .about .company,
-  .about .coffee {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 10rem;
-    min-height: 75vh;
-  }
-  .about .mission img,
-  .about .company img,
-  .about .coffee img {
-    max-width: 90%;
-    border-radius: 1rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .about .mission .accordions,
-  .about .company .accordions,
-  .about .coffee .accordions {
-    max-width: 90%;
-    min-height: 18vh;
-  }
-  .about .mission .accordions .accordion .content-box .accordion-label,
-  .about .company .accordions .accordion .content-box .accordion-label,
-  .about .coffee .accordions .accordion .content-box .accordion-label {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-  .about .mission .accordions .accordion .content-box .accordion-label::before,
-  .about .company .accordions .accordion .content-box .accordion-label::before,
-  .about .coffee .accordions .accordion .content-box .accordion-label::before {
-    font-size: 2rem;
-  }
-  .about .mission .accordions .accordion .content-box .accordion-content,
-  .about .company .accordions .accordion .content-box .accordion-content,
-  .about .coffee .accordions .accordion .content-box .accordion-content {
-    font-size: 1.2rem;
-  }
-  /* ABOUT PAGE END */
-  .contact-header {
-    background-position: 30% 27%;
-  }
-  .contact {
-    padding: 5rem 2rem;
-  }
-  .contact .feedback-text-box {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .contact .feedback-text-box .feedback {
-    font-size: 1.7rem;
-    line-height: 2.2rem;
-  }
-  .contact .contact-main-content {
-    min-height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .contact .contact-main-content .contact-information-card {
-    min-height: 50vh;
-    padding: 2rem 1.4rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 300px;
-    margin-bottom: 3rem;
-  }
-  .contact .contact-main-content .contact-information-card .circle-two {
-    -webkit-clip-path: circle(2rem at 97% 97%);
-            clip-path: circle(2rem at 97% 97%);
-  }
-  .contact .contact-main-content .contact-information-card .circle-one {
-    -webkit-clip-path: circle(4rem at 100% 97%);
-            clip-path: circle(4rem at 100% 97%);
-  }
-  .contact .contact-main-content .contact-information-card .circle {
-    -webkit-clip-path: circle(5rem at 94% 94%);
-            clip-path: circle(5rem at 94% 94%);
-  }
-  .contact .contact-main-content .contact-information-card .information-heading .information-heading-one {
-    font-size: 1.7rem;
-  }
-  .contact .contact-main-content .contact-information-card .information-heading .information-heading-two {
-    font-size: 1rem;
-    line-height: 1.3rem;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details {
-    min-height: 18vh;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details .details-box i {
-    font-size: 1.3rem;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details .contact-link {
-    font-size: 1rem;
-    margin-left: 0.5rem;
-    padding: 0.5rem;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons {
-    left: 1rem;
-    width: 44vw;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons .social-icon {
-    padding: 0.6rem;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons .social-icon i {
-    font-size: 1.3rem;
-  }
-  .contact .contact-main-content .form {
-    max-width: 300px;
-    min-height: 65vh;
-  }
-  .contact .contact-main-content .form .input-group {
-    height: 3rem;
-  }
-  .contact .contact-main-content .form .input-group label {
-    font-size: 1.1rem;
-  }
-  .contact .contact-main-content .form .input-group textarea {
-    padding: 0.8rem;
-  }
-  .contact .contact-main-content .form button[type="submit"] {
-    padding: 0.5rem 0.2rem;
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  .navigation-buttons .backward,
-  .navigation-buttons .forward {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-  .navigation-buttons .backward .arrows,
-  .navigation-buttons .forward .arrows {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 760px) and (max-width: 869px) {
-  .navigation ul {
-    height: 80vh;
-    margin-top: 5rem;
-  }
-  .navigation ul a {
-    font-size: 4.5rem;
-  }
-  .navigation ul a::before {
-    font-size: 5rem;
-  }
-  .pandemic {
-    padding: 0.6rem;
-    min-height: 5vh;
-  }
-  .pandemic p {
-    font-size: 1.2rem;
-  }
-  .header {
-    padding: 1rem 2rem;
-  }
-  .header .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header .logo img {
-    max-height: 3rem;
-    max-width: 100%;
-  }
-  .header .toggle {
-    width: 50px;
-    height: 50px;
-    right: 3rem;
-    top: 3rem;
-    background-size: 40px;
-  }
-  /* HOME PAGE START */
-  .hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 1.5rem;
-  }
-  .hero .circle {
-    -webkit-clip-path: circle(13rem at 50% 15%);
-            clip-path: circle(13rem at 50% 15%);
-  }
-  .hero .content {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    margin-top: 6rem;
-    max-width: 600px;
-  }
-  .hero .content .punch-line {
-    font-size: 2.7rem;
-  }
-  .hero .content .informative {
-    font-size: 1.5rem;
-    line-height: 1.9rem;
-  }
-  .hero .image-box {
-    margin-bottom: 5rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .hero .image-box img {
-    max-width: 300px;
-  }
-  .hero .menu a {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-  .hero .thumbnail {
-    bottom: 38%;
-    width: 70vw;
-    left: 50%;
-  }
-  .hero .thumbnail li img {
-    max-width: 60%;
-  }
-  /* HOME PAGE END */
-  /* NEW PAGE START */
-  .new-header, .menu-header, .about-header, .contact-header,
-  .about-header {
-    min-height: 30vh;
-    background-position: 50% 20%;
-  }
-  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
-  .about-header .hero-heading,
-  .about-header .menu-heading,
-  .about-header .about-heading,
-  .about-header .contact-header .contact-heading,
-  .contact-header .about-header .contact-heading {
-    font-size: 4rem;
-  }
-  .new-main .new-main-heading {
-    padding: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .new-main .new-main-heading h2 {
-    font-size: 3rem;
-    max-width: 400px;
-    margin: 3rem 0 0 0;
-    text-align: center;
-  }
-  .new-main .new-main-content {
-    padding: 2rem;
-  }
-  .new-main .new-main-content .new-main-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    min-height: 70vh;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
-    font-size: 2.3rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    text-align: justify;
-  }
-  .new-main .new-main-content .new-main-card img {
-    max-width: 70%;
-    border-radius: 1rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  /* NEW PAGE END */
-  /* MENU PAGE START */
-  .mobile-menu {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 70%;
-    padding: 0.7rem 0.5rem;
-    bottom: 2rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background: #00704a;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 1rem;
-    z-index: 1;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .mobile-menu .menu-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    min-height: 10vh;
-    word-wrap: break-word;
-    max-width: 12%;
   }
   .mobile-menu .menu-items i {
-    font-size: 2rem;
-    color: gold;
+    font-size: 1.5rem;
   }
   .mobile-menu .menu-items .menu-names {
-    color: #fff;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
-  .menu-main .menu-main-heading h2 {
-    font-size: 3rem;
-    margin: 5rem 0 1rem 0;
-  }
-  .menu-main-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2rem;
-  }
-  .menu-main-content .side-nav {
-    display: none !important;
-    width: 100%;
-  }
-  .menu-main-content .side-nav .sidebar-btn {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-  .menu-main-content .products-container {
-    width: 100%;
-  }
-  .menu-main-content .products-container .product-card {
-    margin-bottom: 5rem;
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-  }
-  .menu-main-content .products-container .product-card h3 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin: 1.5rem 0;
-  }
-  .menu-main-content .products-container .product-card h4 {
-    font-size: 1.4rem;
-    line-height: 1.7rem;
-    text-align: justify;
-  }
-  .menu-main-content .products-container .product-card h5 {
-    font-size: 1.4rem;
-  }
-  .menu-main-content .products-container .product-card img {
-    max-width: 270px;
-    margin-bottom: 2rem;
-  }
-  /* MENU PAGE END */
-  /* ABOUT PAGE START */
   .about .mission,
-  .about .company,
-  .about .coffee {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 10rem;
-    min-height: 75vh;
+  .about .coffee,
+  .about .company {
+    margin-bottom: 0;
   }
-  .about .mission img,
-  .about .company img,
-  .about .coffee img {
-    max-width: 75%;
-    border-radius: 1rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+  .about .mission .accordions .accordion .content-box .accordion-label, .about .coffee .accordions .accordion .content-box .accordion-label, .about .company .accordions .accordion .content-box .accordion-label {
+    font-size: 1.2rem;
   }
-  .about .mission .accordions,
-  .about .company .accordions,
-  .about .coffee .accordions {
-    max-width: 75%;
-    min-height: 18vh;
-  }
-  .about .mission .accordions .accordion .content-box .accordion-label,
-  .about .company .accordions .accordion .content-box .accordion-label,
-  .about .coffee .accordions .accordion .content-box .accordion-label {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-  .about .mission .accordions .accordion .content-box .accordion-label::before,
-  .about .company .accordions .accordion .content-box .accordion-label::before,
-  .about .coffee .accordions .accordion .content-box .accordion-label::before {
+  .about .mission .accordions .accordion .content-box .accordion-label::before, .about .coffee .accordions .accordion .content-box .accordion-label::before, .about .company .accordions .accordion .content-box .accordion-label::before {
     font-size: 2rem;
   }
-  .about .mission .accordions .accordion .content-box .accordion-content,
-  .about .company .accordions .accordion .content-box .accordion-content,
-  .about .coffee .accordions .accordion .content-box .accordion-content {
-    font-size: 1.5rem;
-  }
-  /* ABOUT PAGE END */
-  .contact-header {
-    background-position: 30% 27%;
-  }
-  .contact {
-    padding: 5rem 4rem;
-  }
-  .contact .feedback-text-box {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .contact .feedback-text-box .feedback {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  .contact .contact-main-content {
-    min-height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .contact .contact-main-content .contact-information-card {
-    min-height: 60vh;
-    padding: 3rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 600px;
-    margin-bottom: 3rem;
-  }
-  .contact .contact-main-content .contact-information-card .circle {
-    -webkit-clip-path: circle(14rem at 94% 92%);
-            clip-path: circle(14rem at 94% 92%);
-  }
-  .contact .contact-main-content .contact-information-card .circle-one {
-    -webkit-clip-path: circle(13rem at 100% 97%);
-            clip-path: circle(13rem at 100% 97%);
-  }
-  .contact .contact-main-content .contact-information-card .circle-two {
-    -webkit-clip-path: circle(9rem at 97% 97%);
-            clip-path: circle(9rem at 97% 97%);
-  }
-  .contact .contact-main-content .contact-information-card .information-heading .information-heading-one {
-    font-size: 3rem;
-  }
-  .contact .contact-main-content .contact-information-card .information-heading .information-heading-two {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details {
-    min-height: 22vh;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details .details-box i {
-    font-size: 2rem;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details .contact-link {
-    font-size: 1.7rem;
-    margin-left: 0.5rem;
-    padding: 0.5rem;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons {
-    left: 1rem;
-    width: 44vw;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons .social-icon {
-    padding: 1rem;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons .social-icon i {
-    font-size: 2.2rem;
-  }
-  .contact .contact-main-content .form {
-    width: 600px;
-    padding: 4rem;
-    min-height: 65vh;
-  }
-  .contact .contact-main-content .form .input-group {
-    height: 3rem;
-  }
-  .contact .contact-main-content .form .input-group:hover label {
-    bottom: 3rem;
-  }
-  .contact .contact-main-content .form .input-group input {
-    font-size: 2rem;
-  }
-  .contact .contact-main-content .form .input-group label {
-    font-size: 1.5rem;
-  }
-  .contact .contact-main-content .form .input-group textarea {
-    padding: 0.8rem;
-    font-size: 1.5rem;
-  }
-  .contact .contact-main-content .form .textarea-group {
-    height: 7rem;
-  }
-  .contact .contact-main-content .form button[type="submit"] {
-    padding: 1rem 0.2rem;
-    font-size: 1.7rem;
-    text-align: center;
+  .about .mission .accordions .accordion .content-box .accordion-content, .about .coffee .accordions .accordion .content-box .accordion-content, .about .company .accordions .accordion .content-box .accordion-content {
+    font-size: 1.1rem;
   }
   .navigation-buttons .backward,
   .navigation-buttons .forward {
-    font-size: 2.5rem;
-    padding: 1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
   }
   .navigation-buttons .backward .arrows,
   .navigation-buttons .forward .arrows {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .contact .feedback-text-box .feedback {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+  .contact .contact-main-content .contact-information-card {
+    min-height: 55vh;
+    max-width: 300px;
+  }
+  .contact .contact-main-content .contact-information-card .information-heading .information-heading-one {
+    font-size: 1.5rem;
+  }
+  .contact .contact-main-content .contact-information-card .information-heading .information-heading-two {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details {
+    min-height: 20vh;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details .details-box i {
+    font-size: 1.5rem;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details .contact-link {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons {
+    width: 32vw;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons .social-icon {
+    padding: 0.7rem;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons .social-icon i {
+    font-size: 1.3rem;
+  }
+  .contact .contact-main-content .form {
+    max-width: 300px;
+  }
+  .contact .contact-main-content .form .input-group input {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .form .textarea-group {
+    height: 10rem;
+  }
+  .contact .contact-main-content .form .textarea-group textarea {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .form button[type="submit"] {
+    padding: 0.8rem;
   }
 }
 
-@media (min-width: 870px) and (max-width: 950px) {
-  .navigation ul {
-    height: 80vh;
-    margin-top: 10rem;
-  }
+@media (min-width: 760px) and (max-width: 1025px) {
   .navigation ul a {
-    font-size: 8rem;
-  }
-  .navigation ul a::before {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .pandemic {
-    padding: 0.6rem;
-    min-height: 5vh;
+    padding: 1rem;
   }
   .pandemic p {
     font-size: 1.3rem;
   }
   .header {
-    padding: 1rem 2rem;
-  }
-  .header .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    padding: 1rem 1.2rem;
   }
   .header .logo img {
     max-height: 4rem;
     max-width: 100%;
   }
   .header .toggle, .header .toggle.active {
-    width: 60px;
-    height: 60px;
-    right: 3rem;
-    top: 3rem;
-    background-size: 35px;
+    max-width: 50px;
+    width: 50px;
+    height: 50px;
+    background-size: 30px;
   }
-  /* HOME PAGE START */
   .hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 1.5rem 1.5rem 5rem 1.5rem;
+    padding: 2rem 5rem 3rem;
   }
   .hero .circle {
-    -webkit-clip-path: circle(14rem at 50% 10%);
-            clip-path: circle(14rem at 50% 10%);
-  }
-  .hero .content {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-    margin-top: 10rem;
-  }
-  .hero .content .punch-line {
-    font-size: 3.7rem;
-  }
-  .hero .content .informative {
-    font-size: 2.2rem;
-    line-height: 3rem;
+    -webkit-clip-path: circle(14rem at 50% 6%);
+            clip-path: circle(14rem at 50% 6%);
   }
   .hero .image-box {
-    margin-bottom: 5rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    margin-bottom: 9rem;
   }
   .hero .image-box img {
-    max-width: 320px;
+    max-width: 300px;
   }
-  .hero .menu a {
-    font-size: 1.5rem;
-    padding: 1.2rem;
+  .hero .content .punch-line {
+    font-size: 4rem;
+  }
+  .hero .content .informative {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .hero .content .menu a {
+    font-size: 1.3rem;
+    padding: 1rem 1.3rem;
   }
   .hero .thumbnail {
     bottom: 45%;
-    width: 55vw;
-    left: 53%;
   }
   .hero .thumbnail li img {
-    max-width: 60%;
+    max-width: 50%;
   }
-  /* HOME PAGE END */
-  /* NEW PAGE START */
-  .new-header, .menu-header, .about-header, .contact-header,
-  .about-header {
-    min-height: 30vh;
-    background-position: 50% 20%;
-  }
-  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading,
-  .about-header .hero-heading,
-  .about-header .menu-heading,
-  .about-header .about-heading,
-  .about-header .contact-header .contact-heading,
-  .contact-header .about-header .contact-heading {
-    font-size: 6rem;
-  }
-  .new-main .new-main-heading {
-    padding: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .new-header .hero-heading, .menu-header .hero-heading, .about-header .hero-heading, .contact-header .hero-heading, .menu-header .menu-heading, .about-header .menu-heading, .about-header .about-heading, .contact-header .contact-heading {
+    font-size: 4.5rem;
   }
   .new-main .new-main-heading h2 {
-    font-size: 4rem;
-    max-width: 400px;
-    margin: 3rem 0 0 0;
-    text-align: center;
-  }
-  .new-main .new-main-content {
-    padding: 2rem;
-  }
-  .new-main .new-main-content .new-main-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    min-height: 100vh;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 700px;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
-    font-size: 2.9rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content p {
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: justify;
-  }
-  .new-main .new-main-content .new-main-card .new-main-card-content .less-important-text {
-    font-size: 1.5rem !important;
-  }
-  .new-main .new-main-content .new-main-card img {
-    max-width: 70%;
-    border-radius: 1rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  /* NEW PAGE END */
-  /* MENU PAGE START */
-  .mobile-menu {
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 70%;
-    padding: 0.7rem 0.5rem;
-    bottom: 2rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background: #00704a;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 1rem;
-    z-index: 1;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .mobile-menu .menu-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    min-height: 10vh;
-    word-wrap: break-word;
-    max-width: 12%;
-  }
-  .mobile-menu .menu-items i {
-    font-size: 2.7rem;
-    color: gold;
-  }
-  .mobile-menu .menu-items .menu-names {
-    color: #fff;
-    font-size: 2rem;
-  }
-  .menu-main .menu-main-heading h2 {
-    font-size: 4rem;
-    margin: 5rem 0 1rem 0;
-  }
-  .menu-main-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2rem;
-  }
-  .menu-main-content .side-nav {
-    display: none !important;
-    width: 100%;
-  }
-  .menu-main-content .side-nav .sidebar-btn {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-  .menu-main-content .products-container {
-    width: 100%;
-  }
-  .menu-main-content .products-container .product-card {
-    margin-bottom: 5rem;
-    -ms-flex-preferred-size: 42%;
-        flex-basis: 42%;
-  }
-  .menu-main-content .products-container .product-card h3 {
-    font-size: 2.3rem;
-    text-align: center;
-    margin: 1.5rem 0;
-  }
-  .menu-main-content .products-container .product-card h4 {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-align: justify;
-  }
-  .menu-main-content .products-container .product-card h5 {
-    font-size: 1.8rem;
-  }
-  .menu-main-content .products-container .product-card img {
-    max-width: 400px;
-    margin-bottom: 2rem;
-  }
-  /* MENU PAGE END */
-  /* ABOUT PAGE START */
-  .about .mission,
-  .about .company,
-  .about .coffee {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 10rem;
-    min-height: 100vh;
-  }
-  .about .mission img,
-  .about .company img,
-  .about .coffee img {
-    max-width: 75%;
-    border-radius: 1rem;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .about .mission .accordions,
-  .about .company .accordions,
-  .about .coffee .accordions {
-    max-width: 75%;
-    min-height: 18vh;
-  }
-  .about .mission .accordions .accordion .content-box .accordion-label,
-  .about .company .accordions .accordion .content-box .accordion-label,
-  .about .coffee .accordions .accordion .content-box .accordion-label {
-    font-size: 2.5rem;
-    padding: 1.5rem;
-  }
-  .about .mission .accordions .accordion .content-box .accordion-label::before,
-  .about .company .accordions .accordion .content-box .accordion-label::before,
-  .about .coffee .accordions .accordion .content-box .accordion-label::before {
     font-size: 3rem;
   }
-  .about .mission .accordions .accordion .content-box .accordion-content,
-  .about .company .accordions .accordion .content-box .accordion-content,
-  .about .coffee .accordions .accordion .content-box .accordion-content {
+  .new-main .new-main-content .new-main-card img {
+    max-width: 80%;
+  }
+  .new-main .new-main-content .new-main-card .new-main-card-content h3 {
     font-size: 2.2rem;
   }
-  /* ABOUT PAGE END */
-  .contact-header {
-    background-position: 30% 27%;
+  .new-main .new-main-content .new-main-card .new-main-card-content p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
-  .contact {
-    padding: 5rem 4rem;
+  .menu-main .menu-main-heading h2 {
+    font-size: 3rem;
   }
-  .contact .feedback-text-box {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .menu-main-content .products-container .product-card {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .menu-main-content .products-container .product-card img {
+    max-width: 250px;
+  }
+  .menu-main-content .products-container .product-card h3 {
+    font-size: 1.7rem;
+  }
+  .menu-main-content .products-container .product-card p {
+    font-size: 1.3rem;
+  }
+  .mobile-menu .menu-items i {
+    font-size: 2rem;
+  }
+  .mobile-menu .menu-items .menu-names {
+    font-size: 1.4rem;
+  }
+  .about .mission .accordions .accordion .content-box .accordion-label, .about .coffee .accordions .accordion .content-box .accordion-label, .about .company .accordions .accordion .content-box .accordion-label {
+    font-size: 2rem;
+    padding: 1.2rem;
+  }
+  .about .mission .accordions .accordion .content-box .accordion-content, .about .coffee .accordions .accordion .content-box .accordion-content, .about .company .accordions .accordion .content-box .accordion-content {
+    font-size: 1.5rem;
   }
   .contact .feedback-text-box .feedback {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-  }
-  .contact .contact-main-content {
-    min-height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .contact .contact-main-content .contact-information-card {
-    min-height: 80vh;
-    padding: 3rem;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 700px;
-    margin-bottom: 3rem;
-  }
-  .contact .contact-main-content .contact-information-card .circle {
-    -webkit-clip-path: circle(14rem at 94% 92%);
-            clip-path: circle(14rem at 94% 92%);
-  }
-  .contact .contact-main-content .contact-information-card .circle-one {
-    -webkit-clip-path: circle(13rem at 100% 97%);
-            clip-path: circle(13rem at 100% 97%);
-  }
-  .contact .contact-main-content .contact-information-card .circle-two {
-    -webkit-clip-path: circle(9rem at 97% 97%);
-            clip-path: circle(9rem at 97% 97%);
-  }
-  .contact .contact-main-content .contact-information-card .information-heading .information-heading-one {
-    font-size: 3.4rem;
-  }
-  .contact .contact-main-content .contact-information-card .information-heading .information-heading-two {
     font-size: 2rem;
     line-height: 2.5rem;
   }
-  .contact .contact-main-content .contact-information-card .contact-details {
-    min-height: 30vh;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details .details-box i {
-    font-size: 3rem;
-  }
-  .contact .contact-main-content .contact-information-card .contact-details .contact-link {
-    font-size: 2.2rem;
-    margin-left: 0.5rem;
-    padding: 0.9rem;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons {
-    left: 1rem;
-    width: 45vw;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons .social-icon {
-    padding: 1.3rem;
-  }
-  .contact .contact-main-content .contact-information-card .social-icons .social-icon i {
-    font-size: 3rem;
-  }
-  .contact .contact-main-content .form {
-    width: 700px;
-    padding: 4rem;
-    min-height: 100vh;
-  }
-  .contact .contact-main-content .form .input-group {
-    height: 4rem;
-  }
-  .contact .contact-main-content .form .input-group:hover label {
-    bottom: 1rem;
-  }
-  .contact .contact-main-content .form .input-group input {
-    font-size: 2.2rem;
-  }
-  .contact .contact-main-content .form .input-group input:focus ~ label,
-  .contact .contact-main-content .form .input-group input:valid ~ label {
-    -webkit-transform: translateY(-3rem);
-            transform: translateY(-3rem);
-    color: #00704a;
-  }
-  .contact .contact-main-content .form .input-group label {
-    font-size: 2rem;
-  }
-  .contact .contact-main-content .form .input-group textarea {
-    padding: 0.8rem;
-    font-size: 2.2rem;
-  }
-  .contact .contact-main-content .form .input-group textarea::-webkit-input-placeholder {
-    font-size: 2rem;
-  }
-  .contact .contact-main-content .form .input-group textarea:-ms-input-placeholder {
-    font-size: 2rem;
-  }
-  .contact .contact-main-content .form .input-group textarea::-ms-input-placeholder {
-    font-size: 2rem;
-  }
-  .contact .contact-main-content .form .input-group textarea::placeholder {
-    font-size: 2rem;
-  }
-  .contact .contact-main-content .form .textarea-group {
-    min-height: 10rem;
-  }
-  .contact .contact-main-content .form button[type="submit"] {
-    padding: 1.4rem 0.2rem;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 5rem;
-  }
-  .navigation-buttons .backward,
-  .navigation-buttons .forward {
-    font-size: 3rem;
-    padding: 2rem;
-  }
-  .navigation-buttons .backward .arrows,
-  .navigation-buttons .forward .arrows {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 960px) and (max-width: 1200px) {
-  .navigation ul a::before {
-    font-size: 10rem;
-  }
-  .pandemic {
-    padding: 0.7rem;
-  }
-  .pandemic p {
-    font-size: 1rem;
-  }
-  .header {
-    padding: 0.5rem 2rem;
-  }
-  .header a img {
-    max-width: 40%;
-  }
-  .header .toggle, .header .toggle.active {
-    background-size: 25px;
-    width: 40px;
-    height: 40px;
-  }
-  .hero {
-    padding: 3rem;
-  }
-  .hero .circle {
-    -webkit-clip-path: circle(30rem at bottom right);
-            clip-path: circle(30rem at bottom right);
-  }
-  .hero .image-box img {
-    max-width: 80%;
-  }
-  .hero .content .punch-line {
-    font-size: 3rem;
-  }
-  .hero .content .informative p {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-  .hero .content .menu a {
-    font-size: 1rem;
-    padding: 0.8rem;
-  }
-  .hero .thumbnail {
-    width: 25vw;
-  }
-  .hero .thumbnail li img {
-    max-width: 70%;
-  }
-  .new-header, .menu-header, .about-header, .contact-header {
-    min-height: 45vh;
-    background-position: 0 20%;
-  }
-  .new-main .new-main-heading h2 {
-    font-size: 3rem;
-  }
-  .new-main .new-main-content .new-main-card img {
-    max-width: 40%;
-  }
-  .new-main .navigation-buttons .backward, .new-main .navigation-buttons .forward {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-  .new-main .navigation-buttons .backward .arrows, .new-main .navigation-buttons .forward .arrows {
-    font-size: 2rem;
-  }
-  .mobile-menu {
-    display: none !important;
-  }
-  .menu-main .menu-main-heading h2 {
-    font-size: 3rem;
-  }
-  .menu-main-content {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .menu-main-content .side-nav {
-    position: fixed;
-    display: none;
-    left: 3rem;
-    top: 7rem;
-  }
-  .menu-main-content .products-container {
-    max-width: 70vw;
-  }
-  .menu-main-content .products-container .product-card {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
-  }
-  .menu-main-content .products-container .product-card h3 {
-    font-size: 1.2rem;
-  }
-  .menu-main-content .products-container .product-card h4 {
-    text-align: justify;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-  }
-  .menu-main-content .products-container .product-card h5 {
-    font-size: 0.9rem;
-  }
-  .menu-main-content .products-container .product-card img {
-    max-width: 70%;
-  }
-  .about img {
-    max-width: 50%;
-  }
-  .about .mission .accordions .accordion-content,
-  .about .coffee .accordions .accordion-content,
-  .about .company .accordions .accordion-content {
-    font-size: 1.1rem;
-  }
-  .about .mission .accordions .accordion-label,
-  .about .coffee .accordions .accordion-label,
-  .about .company .accordions .accordion-label {
-    font-size: 1.2rem;
-    padding: 0.8rem;
-  }
-  .about .mission .accordions .accordion-label::before,
-  .about .coffee .accordions .accordion-label::before,
-  .about .company .accordions .accordion-label::before {
-    font-size: 2rem;
+  .contact .contact-main-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .contact .contact-main-content .contact-information-card {
-    min-height: 620px;
-    max-width: 460px;
+    min-height: 50vh;
+    max-width: 300px;
   }
-  .contact .feedback-text-box .feedback {
+  .contact .contact-main-content .contact-information-card .information-heading {
+    margin-bottom: 2rem;
+  }
+  .contact .contact-main-content .contact-information-card .information-heading .information-heading-one {
     font-size: 1.6rem;
   }
-  .navigation-buttons .forward, .navigation-buttons .backward {
-    padding: 1rem;
+  .contact .contact-main-content .contact-information-card .information-heading .information-heading-two {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details {
+    min-height: 15vh;
+  }
+  .contact .contact-main-content .contact-information-card .contact-details .details-box i {
     font-size: 2rem;
   }
+  .contact .contact-main-content .contact-information-card .contact-details .details-box .contact-link {
+    font-size: 1rem;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons {
+    width: 18vw;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons .social-icon {
+    padding: 0.6rem;
+  }
+  .contact .contact-main-content .contact-information-card .social-icons .social-icon i {
+    font-size: 1.7rem;
+  }
+  .contact .contact-main-content .form {
+    max-width: 300px;
+    min-height: 60vh;
+  }
+  .contact .contact-main-content .form .textarea-group {
+    height: 10rem;
+  }
+  .contact .contact-main-content .form .textarea-group textarea {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .navigation-buttons .forward, .navigation-buttons .backward {
+    padding: 2rem 2rem;
+    font-size: 2.5rem;
+  }
   .navigation-buttons .forward .arrows, .navigation-buttons .backward .arrows {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (min-width: 1250px) and (max-width: 1500px) {
   .navigation ul a::before {
-    font-size: 15rem;
+    font-size: 12rem;
   }
   .pandemic {
     padding: 0.7rem;
@@ -3418,7 +2518,7 @@ ul {
     margin-bottom: 0.5rem;
   }
   .navigation-buttons .forward, .navigation-buttons .backward {
-    padding: 1rem;
+    padding: 2rem;
     font-size: 2rem;
   }
   .navigation-buttons .forward .arrows, .navigation-buttons .backward .arrows {

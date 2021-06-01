@@ -1,0 +1,208 @@
+@media(min-width:760px) and (max-width:1025px){
+    .navigation{
+        ul{
+            a{
+                font-size: 6rem;
+            }
+        }
+    }
+    .pandemic{
+        padding: 1rem;
+        p{
+            font-size: 1.3rem;
+        }
+    }
+    .header{
+        padding: 1rem 1.2rem;
+        .logo{
+            img{
+                max-height: 4rem;
+                max-width: 100%;
+            }
+        }
+        .toggle, .toggle.active{
+            max-width: 50px;
+            width: 50px;
+            height: 50px;
+            background-size: 30px;
+        }
+    }
+    .hero{
+        padding: 2rem 5rem 3rem;
+        .circle{
+            clip-path: circle(14rem at 50% 6%);
+        }
+        .image-box{
+            margin-bottom: 9rem;
+            img{
+                max-width: 300px;
+            }
+        }
+        .content{
+            .punch-line{
+                font-size: 4rem;
+            }
+            .informative{
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+            .menu{
+                a{
+                    font-size: 1.3rem;
+                    padding: 1rem 1.3rem;
+                }
+            }
+        }
+        .thumbnail{
+            bottom: 45%;
+            li{
+                img{
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+    .new-header{
+        .hero-heading{
+            font-size: 4.5rem;
+        }
+    }
+    .new-main{
+        .new-main-heading{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .new-main-content{
+            .new-main-card{
+                img{
+                    max-width: 80%;
+                }
+                .new-main-card-content{
+                    h3{
+                        font-size: 2.2rem;
+                    }
+                    p{
+                        font-size: 1.5rem;
+                        line-height: 2.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .menu-main{
+        .menu-main-heading{
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+    .menu-main-content{
+        .products-container{
+            .product-card{
+                flex-basis: 50%;
+                img{
+                    max-width: 250px;
+                }
+                h3{
+                    font-size: 1.7rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    .mobile-menu{
+        .menu-items{
+            i{
+                font-size: 2rem;
+            }
+            .menu-names{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .about{
+        .mission, .coffee, .company{
+            .accordions{
+                .accordion{
+                    .content-box{
+                        .accordion-label{
+                            font-size: 2rem;
+                            padding: 1.2rem;
+                        }
+                        .accordion-content{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        .feedback-text-box{
+            .feedback{
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+        .contact-main-content{
+            flex-direction: row;
+            .contact-information-card{
+                min-height: 50vh;
+                max-width: 300px;
+                .information-heading{
+                    margin-bottom: 2rem;
+                    .information-heading-one{
+                        font-size: 1.6rem;
+                    }
+                    .information-heading-two{
+                        font-size: 1.1rem;
+                        line-height: 1.5rem;
+                    }
+                }
+                .contact-details{
+                    min-height: 15vh;
+                    .details-box{
+                        i{
+                            font-size: 2rem;
+                        }
+                        .contact-link{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .social-icons{
+                    width: 18vw;
+                    .social-icon{
+                        padding: 0.6rem;
+                        i{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+            .form{
+                max-width: 300px;
+                min-height: 60vh;
+                .textarea-group{
+                    height: 10rem;
+                    textarea{
+                        font-size: 1.1rem;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .navigation-buttons{
+        .forward, .backward{
+            padding: 2rem 2rem;
+            font-size: 2.5rem;
+            .arrows{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

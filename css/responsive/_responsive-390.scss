@@ -1,0 +1,194 @@
+@media(min-width:390px) and (max-width:430px){
+    .navigation{
+        ul{
+            a{
+                font-size: 4rem;
+            }
+        }
+    }
+    .pandemic{
+        padding: 0.8rem;
+        p{
+            font-size: 0.9rem;
+        }
+    }
+    .header{
+        .logo{
+            img{
+                max-width: 90%;
+            }
+        }
+    }
+    .new-hero{
+        .new-header{
+            .hero-heading{
+                font-size: 3rem;
+            }
+        }
+    }
+    .hero{
+        .image-box{
+            margin-bottom: 10rem;
+            img{
+                max-width: 230px;
+            }
+        }
+        .circle{
+            clip-path: circle(10rem at 50% 6%);
+        }
+        
+        .content{
+            .punch-line{
+                font-size: 2.2rem;
+            }
+            .informative{
+                line-height: 1.6rem;
+                margin-bottom: 3rem;
+                font-size: 1.1rem;
+            }
+        }
+        .thumbnail{
+            
+            bottom: 40%;
+            width: 80vw;
+            li{
+                img{
+                    max-width: 65%;
+                }
+            }
+        }
+        .menu{
+            a{
+                font-size: 1.1rem;
+                padding: 0.8rem;
+            }
+        }
+    }
+    .new-main{
+        .new-main-content{
+            .new-main-card{
+                min-height: 75vh;
+                margin-bottom: 0rem;
+                .new-main-card-content{
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .menu-main-content{
+        .products-container{
+            width: 100%;
+            .product-card{
+                img{
+                    max-width: 230px;
+                }
+            }
+        }
+    }
+    .mobile-menu{
+        .menu-items{
+            i{
+                font-size: 1.5rem;
+            }
+            .menu-names{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .about{
+        .mission, .coffee, .company{
+            margin-bottom: 0;
+        }
+        .mission, .coffee, .company{
+            .accordions{
+                .accordion{
+                    .content-box{
+                        .accordion-label{
+                            font-size: 1.2rem;
+                            &::before{
+                                font-size: 2rem;
+                            }
+                        }
+                        .accordion-content{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navigation-buttons{
+        .backward, .forward{
+            font-size: 1.5rem;
+            padding: 1rem;
+            .arrows{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .contact{
+        .feedback-text-box{
+            .feedback{
+                font-size: 1.7rem;
+                line-height: 2.5rem;
+            }
+        }
+        .contact-main-content{
+            .contact-information-card{
+                min-height: 55vh;
+                max-width: 300px;
+                .information-heading{
+                    .information-heading-one{
+                        font-size: 1.5rem;
+                    }
+                    .information-heading-two{
+                        font-size: 1rem;
+                    }
+                }
+                .contact-details{
+                    min-height: 20vh;
+                    .details-box{
+                        i{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .contact-link{
+                        font-size: 1rem;
+                    }
+                }
+                .social-icons{
+                    width: 32vw;
+                    .social-icon{
+                        padding: 0.7rem;
+                        i{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+            .form{
+                max-width: 300px;
+                .input-group{
+                    input{
+                        font-size: 1rem;
+                    }
+                }
+                .textarea-group{
+                    height: 10rem;
+                    textarea{
+                        font-size: 1rem;
+                    }
+                }
+                button[type="submit"]{
+                    padding: 0.8rem;
+                }
+            }
+            
+        }
+    }
+}

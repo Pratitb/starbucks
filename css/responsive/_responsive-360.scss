@@ -1,0 +1,104 @@
+@media(min-width:360px) and (max-width:374px){
+  .navigation{
+    ul{
+      a{
+        font-size: 4rem;
+      }
+    }
+  }
+  .header{
+    .logo{
+      img{
+        max-width: 78%;
+      }
+    }
+  }
+  .pandemic{
+    padding: 0.8rem;
+    p{
+      font-size: 0.8rem;
+    }
+  }
+  .hero{
+    min-height: 85vh;
+    .thumbnail{
+      bottom: 43%;
+    }
+    .image-box{
+      img{
+        max-width: 160px;
+      }
+    }
+    .circle{
+      clip-path: circle(8rem at 50% 11%);
+    }
+  }
+  .menu-main-content{
+    .products-container{
+      .product-card{
+        img{
+          max-width: 190px;
+        }
+      }
+    }
+  }
+  .mobile-menu{
+    .menu-items{
+      min-height: 8vh;
+      i{
+        font-size: 1.2rem;
+      }
+      .menu-names{
+        font-size: 0.8rem;
+      }
+    }
+  } 
+  .about{
+    .accordions{
+      .accordion{
+        .content-box{
+          .accordion-label{
+            font-size: 1.3rem!important;
+          }
+          .accordion-content{
+            line-height: 1.5rem!important;
+          }
+        }
+      }
+    }
+  }
+  .contact{
+    .contact-main-content{
+      .form{
+        max-width: 300px;
+      }
+      .contact-information-card{
+        max-width: 300px;
+        .information-heading{
+          .information-heading-two{
+            font-size: 1rem;
+          }
+        }
+        .contact-details{
+          .details-box{
+            i{
+              font-size: 1.5rem;
+            }
+          }
+          .contact-link{
+            font-size: 1rem;
+          }
+        }
+        .social-icons{
+          width: 55vw;
+          .social-icon{
+            padding: 0.6rem;
+            i{
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

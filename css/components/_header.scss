@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    .logo {
+      img {
+        position: relative;
+        z-index: 2;
+        max-width: 50%;
+      }
+    }
+  
+    .toggle {
+      position: fixed;
+      right: 6rem;
+      top: 2rem;
+      background: rgb(255, 255, 255) url(../images/menu.png);
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-position: center;
+      cursor: pointer;
+      z-index: 2;
+      width: 50px;
+      height: 50px;
+    }
+    .toggle.active {
+      background: rgb(255, 255, 255) url(../images/close.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px;
+      width: 50px;
+      height: 50px;
+    }
+  }
